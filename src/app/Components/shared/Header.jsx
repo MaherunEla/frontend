@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <section>
-        <nav className='relative bg-[#232536] px-20 py-3'>
+        <nav className='relative bg-[#232536] px-20 py-5'>
             <div className='flex items-center justify-between'>
                 {/* logo */}
 
