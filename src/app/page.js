@@ -1,15 +1,14 @@
 import Image from 'next/image'
-import Header from './Components/shared/Header'
-import Footer from './Components/shared/Footer'
+import PageHome from './Components/view/Home/PageHome'
+
+
 
 
 
 export default function Home() {
   return (
     <main>
-      <Header />
-      <Footer />
-      
+      <PageHome />
       
     </main>
   )
