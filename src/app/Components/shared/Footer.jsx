@@ -43,16 +43,16 @@ const Footer = () => {
         </div>
 
         {/* footer middle */}
-        <div className='bg-gray-700 mx-20 my-3'>
-          <div className='m-20 flex flex-row items-center justify-between'>
-            <div className='max-w-xl my-20 mx-15'>
+        <div className='bg-gray-700 mx-3 my-2 md:mx-20 md:my-3'>
+          <div className='m-20 flex flex-col md:flex-row items-center justify-between'>
+            <div className='maz-w-sm md:max-w-xl my-20 mx-15'>
               <h2 className='text-4xl font-medium text-[#FFFFFF]'>Subscribe to our news letter to get latest updates and news</h2>
             </div>
-              <div className='space-x-4'>
+              <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4'>
               <input type="" class="pl-5 py-3 bg-gray-700 border-2 border-[#4C4C4C]" value="Enter Your Email" />
 
 
-               <button className='px-10 py-3 border-2 border-[#4C4C4C]  bg-[#FFD050]'> Subscribe</button>
+               <button className='px-10 py-3 border-2 border-[#4C4C4C]  bg-[#FFD050] '> Subscribe</button>
 
               </div>
              
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
 
         {/* footer icon */}
-        <div className='flex flex-row items-center justify-between mx-20 my-3 '>
+        <div className='flex flex-col md:flex-row items-center justify-between mx-20 my-3 '>
           <div className='text-[#FFFFFF]'>
             <p>Finstreet 118 2561 Fintown</p>
             <p>Hello@finsweet.com  020 7993 2905</p>
