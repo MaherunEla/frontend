@@ -15,5 +15,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+.button{
+  @apply max-w-[200px] pl-[55px] py-4 text-lg font-bold text-[#232536] border-2 w-[204px] h-[56px] border-[#FFD050] bg-[#FFD050];
+}
 

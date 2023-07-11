@@ -2,9 +2,21 @@
 import Footer from './Components/shared/Footer'
 import Header from './Components/shared/Header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter,Sen } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'],variable:"--inter" })
+ const sen= Sen({
+   weight:[ '400' ,'700','800'],
+  variable: "--sen",
+  subsets:['latin'],
+  style:['normal'],
+  display:'swap',
+
+
+
+
+})
+ 
 
 export const metadata = {
   title: 'Blog',
@@ -14,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${sen.variable} ${inter.variable}`}>
         <Header />
         
         {children}

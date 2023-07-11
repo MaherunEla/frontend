@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import {IoIosArrowForward } from "react-icons/io"
-import {BsFacebook} from 'react-icons/bs'
+import {BsFacebook,BsArrowRight,BsArrowLeft} from 'react-icons/bs'
 import {AiOutlineTwitter, AiFillLinkedin} from 'react-icons/ai'
 import {BiLogoInstagram} from 'react-icons/bi'
 
@@ -264,13 +264,68 @@ const CategoryHome = () => {
                 {/* TESTIMONIALs parts */}
 
                 <div className='h-[646px] bg-[#FBF6EA]'>
-                  {/* left */}
-                  <div>
+                  <div className='flex flex-row items-center justify-between'>
+                    {/* left */}
+                  <div className='m-20 space-y-5 flex flex-col'>
+                    <h4 className='text-base font-semibold uppercase'>TESTIMONIALs</h4>
+                    <h1 className='text-4xl max-w-xs font-bold'>What people say about our blog</h1>
+                    <p className='max-w-xs text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     
+                    </div>
+                    {/* border */}
+                    <div className=' h-[350px] w-[2px] bg-black m-10'>
+
+                    </div>
+                    {/* right side */}
+                    <div className='m-10 flex flex-col space-y-10'>
+                      <p className='max-w-md text-2xl font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='flex flex-row items-center justify-between'>
+                        <div className='flex flex-row space-x-3'>
+                        <Image
+                      src="/assets/images/Home/Profile.png"
+                      width={48}
+                      height={48}
+                      alt="Profile"
+                      />  
+                      <div>
+
+                      <h2 className='text-2xl font-bold'>Jonathan Vallem</h2>
+                      <p className='text-base font-normal text-[#6D6E76]'>New york, USA</p>
+                      </div>
+
+                      </div>
+                      
+                      <div className='flex flex-row space-x-20'>
+
+                      <BsArrowLeft />
+
+                      <BsArrowRight />
+                      </div>
+
+                      
+                      
+
+
+
+                    </div>
+                    </div>
+                    
+
+
                   </div>
+
+                  
 
 
                 </div>
+
+                {/* join our team */}
+
+                <div className='m-20 flex flex-col items-center space-y-5'>
+                  <h1 className='max-w-sm text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
+                  <p className='w-[404px] text-center text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <Link href="/" className='button'>Join Now</Link>
+                  </div>
 
             
         </div>
