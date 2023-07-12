@@ -1,6 +1,7 @@
 import React from 'react'
 import {BlogData} from './Blogdata'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Blogpost = () => {
   return (
@@ -11,7 +12,9 @@ const Blogpost = () => {
             </h1>
             <div className='grid grid-cols-1 gap-8'>
                 {
+                    
                     BlogData.map((item,index)=>(
+                        <Link href="/blog/blogpost">
                         <div className={` flex flex-col md:flex-row items-center space-x-5 space-y-5 ${index===1 && "bg-white"}`}>
                             <div>
                                 <Image
@@ -25,6 +28,7 @@ const Blogpost = () => {
                             </div>
 
                         </div>
+                        </Link>
 
                     )
                     )

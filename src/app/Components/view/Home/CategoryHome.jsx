@@ -131,6 +131,7 @@ const CategoryHome = () => {
                   {/* author list */}
                   <div className='mt-10 flex flex-row items-center justify-between'>
                     {/* author box 1 */}
+                    <Link href="/author">
                     <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
                       className='mt-5'
@@ -150,7 +151,11 @@ const CategoryHome = () => {
 
                     </div>
 
+
+                    </Link>
+                   
                     {/* author box 2 */}
+                    <Link href="/author">
                     <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
                       className='mt-5'
@@ -170,7 +175,11 @@ const CategoryHome = () => {
 
                     </div>
 
+                    </Link>
+                   
+
                     {/* author box 3 */}
+                    <Link href="/author">
                     <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
                       className='mt-5'
@@ -189,8 +198,11 @@ const CategoryHome = () => {
                       </div>
 
                     </div>
+                    </Link>
+                   
 
                     {/* author box 4*/}
+                    <Link href="/author">
                     <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
                       className='mt-5'
@@ -209,6 +221,9 @@ const CategoryHome = () => {
                       </div>
 
                     </div>
+
+                    </Link>
+                    
 
                     
 

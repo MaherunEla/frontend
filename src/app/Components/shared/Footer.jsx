@@ -31,10 +31,10 @@ const Footer = () => {
             {/* menu items*/}
             <div className='hidden md:flex items-center space-x-4 text-[#FFFFFF] text-base font-normal'>
                 <Link href="/">Home</Link>
-                <Link href="/">Blog</Link>
+                <Link href="/blog">Blog</Link>
                 <Link href="/">About Us</Link>
                 <Link href="/">Contact Us</Link>
-                <Link href="/">Privacy policy</Link>
+                <Link href="/privacy">Privacy policy</Link>
 
             </div>
             </div>
@@ -70,7 +70,7 @@ const Footer = () => {
           <div className='flex flex-row items-center space-x-3 '>
             <BsFacebook className='fill-[#6D6E76] ' />
             <AiOutlineTwitter className='fill-[#6D6E76]' />
-            <BiLogoInstagram />
+            <BiLogoInstagram className='fill-[#6D6E76]'/>
             <AiFillLinkedin className='fill-[#6D6E76]' />
           </div>
         </div>

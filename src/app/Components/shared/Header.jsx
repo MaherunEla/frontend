@@ -25,7 +25,7 @@ const Header = () => {
                 <Link href="/">Home</Link>
                 <Link href="/blog">Blog</Link>
                 <Link href="/">About Us</Link>
-                <Link href="/">Contact Us</Link>
+                <Link href="/contactus">Contact Us</Link>
                 <Link href="/" className='border-2 px-10 py-2 border-[#232536] bg-[#FFFFFF] text-[#232536]' >Subscribes</Link>
 
             </div>
