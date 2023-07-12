@@ -5,9 +5,9 @@ import {IoIosArrowForward} from 'react-icons/io'
 const AboutHome = () => {
   return (
     <section>
-        <div className='container mx-20  my-20 '>
+        <div className='container  '>
             {/* feature */}
-            <div className='flex flex-col md:flex-row justify-between space-x-4 '>
+            <div className='mx-20  my-20 flex flex-col md:flex-row justify-between space-x-4 '>
                 {/* left side */}
                 <div className='flex flex-col space-y-10  '>
                     <h1 className='text-4xl font-bold'>Featured Post</h1>
@@ -85,7 +85,7 @@ const AboutHome = () => {
 
             {/* about us */}
 
-            <div className='mt-20'>
+            <div className='mx-20  my-20'>
                 <div className='flex flex-row'>
                     <div className='flex-none w-[200px] h-[23px]'></div>
                     <div className='grow h-[23px] bg-[#FFD050]'></div>

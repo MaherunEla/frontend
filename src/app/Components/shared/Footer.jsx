@@ -8,7 +8,7 @@ import {BiLogoInstagram} from 'react-icons/bi'
 const Footer = () => {
   return (
     <section>
-      <div className='bg-[#232536]'>
+      <div className='bg-[#232536] container'>
         <div className='p-10'>
           {/* footer nav */}
         <div>

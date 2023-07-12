@@ -18,4 +18,18 @@
 .button{
   @apply max-w-[200px] pl-[55px] py-4 text-lg font-bold text-[#232536] border-2 w-[204px] h-[56px] border-[#FFD050] bg-[#FFD050];
 }
-
+.container{
+  width:calc(100% - 32px);
+  max-width:1440px;
+  margin: 0 auto;
+}
+@media(min-width:768px){
+  .container{
+    width:calc(100%-30px);
+  }
+}
+@media(min-width:1024px){
+  .container{
+    width:calc(100%-90px);
+  }
+}

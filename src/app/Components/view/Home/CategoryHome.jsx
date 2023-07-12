@@ -263,7 +263,7 @@ const CategoryHome = () => {
                 </div>
                 {/* TESTIMONIALs parts */}
 
-                <div className='h-[646px] bg-[#FBF6EA]'>
+                <div className='h-[646px] bg-[#FBF6EA] m-10'>
                   <div className='flex flex-row items-center justify-between'>
                     {/* left */}
                   <div className='m-20 space-y-5 flex flex-col'>
@@ -273,7 +273,7 @@ const CategoryHome = () => {
                     
                     </div>
                     {/* border */}
-                    <div className=' h-[350px] w-[2px] bg-black m-10'>
+                    <div className=' h-[350px] w-[2px] bg-[#6D6E76] m-10'>
 
                     </div>
                     {/* right side */}
