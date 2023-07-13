@@ -49,7 +49,7 @@ const Footer = () => {
               <h2 className='text-4xl font-medium text-[#FFFFFF]'>Subscribe to our news letter to get latest updates and news</h2>
             </div>
               <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4'>
-              <input type="" class="pl-5 py-3 bg-gray-700 border-2 border-[#4C4C4C]" value="Enter Your Email" />
+              <input type="" className="pl-5 py-3 bg-gray-700 border-2 border-[#4C4C4C]" value="Enter Your Email" />
 
 
                <button className='px-10 py-3 border-2 border-[#4C4C4C]  bg-[#FFD050] '> Subscribe</button>

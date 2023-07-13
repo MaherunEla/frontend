@@ -339,7 +339,7 @@ const CategoryHome = () => {
                 <div className='m-20 flex flex-col items-center space-y-5'>
                   <h1 className='max-w-sm text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
                   <p className='w-[404px] text-center text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                  <Link href="/" className='button'>Join Now</Link>
+                  <Link href="/" className='px-10 py-3 text-lg font-bold border-2 border-[#FFD050] bg-[#FFD050] font-sen'>Join Now</Link>
                   </div>
 
             

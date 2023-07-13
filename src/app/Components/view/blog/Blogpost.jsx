@@ -14,7 +14,7 @@ const Blogpost = () => {
                 {
                     
                     BlogData.map((item,index)=>(
-                        <Link href="/blog/blogpost">
+                        <Link href={`/blog/${item.slug}`}>
                         <div className={` flex flex-col md:flex-row items-center space-x-5 space-y-5 ${index===1 && "bg-white"}`}>
                             <div>
                                 <Image

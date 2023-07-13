@@ -1,0 +1,140 @@
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import Authorlist from '../Components/view/about/Authorlist'
+
+const page = () => {
+  return (
+    <section>
+        <div className='container'>
+          <div className="relative w-[1280px] h-[444px] bg-cover bg-center bg-[url('/assets/images/About/aboutbg.png')]">
+          {/* <Image
+            src="/assets/images/About/aboutbg.png"
+            width={1280}
+            height={444}
+            alt="group"
+            /> */}
+           <div className=' mt-[40px] flex flex-col '>
+            <div className='max-h-36 max-w-xl bg-[#FFD050] border-2 border-[#FFD050]'>
+              <div className='flex flex-row'>
+                <div>
+                <h1 className='font-sen'>12+</h1>
+                <p>Blogs Published</p>
+
+                </div>
+                
+
+              </div>
+
+            </div>
+            <div className='flex flex-row'>
+                    <div className='flex-none w-[100px] h-[23px]'></div>
+                    <div className='flex-none w-[275px] h-[23px] bg-[#592EA9]'></div>
+                    <div className='flex-none w-[550px] h-[23px] bg-[#FFD050]'></div>
+                    
+
+
+
+                </div>
+           </div>
+
+           
+
+          </div>
+            
+          
+
+
+          <div className='bg-[#F4F0F8] max-h-96 mx-10'>
+            <div className='p-20 flex flex-row space-x-4'>
+              <div className='flex flex-col'>
+                <h4 className='text-base font-medium font-sen uppercase'>Our mision</h4>
+                <h1 className='max-w-md text-2xl font-bold font-sen'>Creating valuable content for creatives all around the world</h1>
+                <p className='max-w-lg font-inter text-base font-normal text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+              </div>
+
+              <div className='flex flex-col'>
+                <h4 className='text-base font-medium font-sen uppercase'>Our Vision</h4>
+                <h1 className='max-w-md text-2xl font-bold font-sen'>A platform that empowers individuals to improve</h1>
+                <p className='max-w-lg font-inter text-base font-normal text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+
+          <div className='m-10 grid grid-cols-1 gap-20 md:grid-cols-2 items-center'>
+            
+              <div className='flex flex-col space-y-2 '>
+                <h1 className='text-4xl font-sen font-bold '>Our team of creatives</h1>
+                <h4 className='font-sen text-2xl font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+              </div>
+              <div className='flex flex-row'>
+              <Image
+             className='-mt-[200px] -mr-10 z-10'
+             src="/assets/images/About/shapes.svg"
+             width={74}
+             height={74}
+             alt="shapes"
+             />
+             <Image
+              
+             src="/assets/images/About/abouthero.png"
+             width={624}
+             height={480}
+             alt="abouthero"
+             />
+            
+
+              </div>
+              
+              <div>
+              <Image
+              src="/assets/images/About/abouthero2.png"
+              width={624}
+              height={480}
+              alt="abouthero"
+              />
+              <Image
+              className='ml-20 -mt-10'
+              src="/assets/images/About/circle.svg"
+              width={74}
+              height={74}
+              alt="circle"
+              />
+
+              </div>
+              
+
+              <div className='flex flex-col space-y-2'>
+             
+                <h1 className='text-4xl font-sen font-bold '>Why we started this Blog</h1>
+                <h4 className='font-sen text-2xl font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+              </div>
+             
+
+           
+
+          </div>
+            <Authorlist />
+            {/* join our team */}
+
+            <div className='m-10 flex flex-col items-center space-y-5'>
+                  <h1 className='max-w-sm text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
+                  <p className='w-[404px] text-center text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <Link href="/" className='px-10 py-3 text-lg font-bold border-2 border-[#FFD050] bg-[#FFD050] font-sen'>Join Now</Link>
+                  </div>
+
+        </div>
+    </section>
+
+    
+  )
+}
+
+export default page

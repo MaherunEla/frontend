@@ -1,11 +1,18 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
+import { useParams } from 'next/navigation';
+import { authordata } from '@/app/Components/view/about/Authordata';
 import {BsFacebook} from 'react-icons/bs'
 import {AiOutlineTwitter, AiFillLinkedin} from 'react-icons/ai'
 import {BiLogoInstagram} from 'react-icons/bi'
 
 
 const page = () => {
+    const param= useParams()
+    const author=authordata.find(e=>e.slug =param?.slug)
+    console.log({param,author});
+
   return (
     <section>
         <div className='container'>

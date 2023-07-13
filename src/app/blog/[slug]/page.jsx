@@ -1,8 +1,16 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useParams } from 'next/navigation'
+import { BlogData } from '@/app/Components/view/blog/Blogdata'
 
 const page = () => {
+    const param = useParams()
+    
+    const blog = BlogData.find(e=>e.slug = param?.slug)
+    
+    console.log({param,blog});
   return (
     <section>
         <div className='container px-20'>
@@ -10,7 +18,8 @@ const page = () => {
                 <div className='flex flex-col md:flex-row space-x-5'>
                     <Image
                     className=""
-                    src="/assets/images/Home/Profile.png"
+                    alt='author'
+                    src={blog?.image}
                     width={48}
                     height={48}
                     />
@@ -27,7 +36,7 @@ const page = () => {
                 <h1 className='max-w-3xl text-4xl pl-[245px] font-bold font-sen '>Step-by-step guide to choosing great font pairs</h1>
                 <div className='flex flex-row pr-[165px] space-x-2'>
                     <Image
-                    
+                    alt='logo'
                     src="/assets/images/Home/shuttle.svg"
                     width={24}
                     height={24}
@@ -167,10 +176,10 @@ const page = () => {
 
              {/* join our team */}
 
-             <div className='m-[100px] flex flex-col items-center space-y-5'>
+             <div className='font-sen m-[100px] flex flex-col items-center space-y-5'>
                   <h1 className='max-w-sm text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
                   <p className='w-[404px] text-center text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                  <Link href="/" className='w-[174px] h-[56px] pt-3 text-center text-lg font-bold text-[#232536] border-2 border-[#FFD050] bg-[#FFD050]'>Join Now</Link>
+                  <Link href="/" className='font-sen w-[174px] h-[56px] pt-3 text-center text-lg font-bold text-[#232536] border-2 border-[#FFD050] bg-[#FFD050]'>Join Now</Link>
                   </div>
 
             

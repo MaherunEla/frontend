@@ -6,8 +6,9 @@ import {IoIosArrowForward} from 'react-icons/io'
 const HeroHome = () => {
   return (
     <section>
-        <div className="container brightness-50 bg-[url('/assets/images/Home/homebg.png')] bg-cover bg-center bg-no-repeat h-[720px]"> 
-        < div className='flex flex-col px-20 py-[128px] space-y-5'>
+        <div className="container relative bg-[url('/assets/images/Home/homebg.png')] bg-cover bg-center bg-no-repeat h-screen"> 
+        <div className='absolute bg-black/50 h-full inset-0'></div>
+        < div className='flex relative z-10 flex-col px-20 py-[128px] space-y-5'>
            
                 <h4 className='text-[#FFFFFF] text-base font-light text-[#FFFFFF] '>Posted on <span className='font-medium'>startup</span></h4>
             
