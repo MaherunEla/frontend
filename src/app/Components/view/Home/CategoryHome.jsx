@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { CategoryData } from './CategoryData'
 import {IoIosArrowForward } from "react-icons/io"
 import {BsFacebook,BsArrowRight,BsArrowLeft} from 'react-icons/bs'
 import {AiOutlineTwitter, AiFillLinkedin} from 'react-icons/ai'
@@ -10,28 +11,37 @@ const CategoryHome = () => {
   return (
     <section>
         <div className='container m-10'>
-            <h1 className='text-4xl font-bold text-center'>Choose A Catagory</h1>
+            <h1 className='font-sen text-4xl font-bold text-center'>Choose A Catagory</h1>
             {/* categori option */}
             <div className='m-10 flex flex-row items-center justify-between '>
-              
+              {
+               CategoryData.map((item,index)=>(
+                <Link href={`/category/${item.slug}`}>
+
+               
+                
                   {/* categori item */}
+                  
                     <div className='flex flex-col p-5 space-y-3 w-[296px] h-[228px] border-2 border-stone-100 hover:bg-[#FFD050]'>
                     <div className='border-1 border-stone-300 rounded-md bg-stone-100 w-[48px] h-[48px]'>
                       <Image
-                      src="/assets/images/Home/Icon.svg"
-                      width={48}
-                      height={48}
+                      className='m-3'
+                      src={item.image}
+                      width={23}
+                      height={23}
                       alt="logo"
                       />
                       </div>
-                      <h1 className='text-2xl font-bold'>Business</h1>
-                      <p className='font-normal text-base'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                      <h1 className='font-sen text-2xl font-bold'>{item.title}</h1>
+                      <p className='font-inter font-normal text-base'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         
 
                     </div>
+                    </Link>
+                 ))}
 
                      {/* categori item */}
-                  <div className='flex flex-col p-5 space-y-3 w-[296px] h-[228px] border-2 border-stone-100 hover:bg-[#FFD050]'>
+                  {/* <div className='flex flex-col p-5 space-y-3 w-[296px] h-[228px] border-2 border-stone-100 hover:bg-[#FFD050]'>
                     <div className='border-1 border-stone-300 rounded-md bg-stone-100  w-[48px] h-[48px]'>
                      <Image
                       className='m-3'
@@ -49,7 +59,7 @@ const CategoryHome = () => {
 
                     </div>
                      {/* categori item */}
-                  <div className='flex flex-col space-y-3 p-5 w-[296px] h-[228px] border-2 border-stone-100 hover:bg-[#FFD050]'>
+                  {/* <div className='flex flex-col space-y-3 p-5 w-[296px] h-[228px] border-2 border-stone-100 hover:bg-[#FFD050]'>
                   <div className='border-1 border-stone-300 rounded-md bg-stone-100  w-[48px] h-[48px]'>
                       <Image
                       className='m-3'
@@ -63,10 +73,10 @@ const CategoryHome = () => {
                       <p className='font-normal text-base'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         
 
-                    </div>
+                    </div>  */}
 
                      {/* categori item */}
-                     <div className='flex flex-col p-5 space-y-3 w-[296px] h-[228px] border-2 border-stone-100 hover:bg-[#FFD050]'>
+                     {/* <div className='flex flex-col p-5 space-y-3 w-[296px] h-[228px] border-2 border-stone-100 hover:bg-[#FFD050]'>
                      <div className='border-1 border-stone-300 rounded-md bg-stone-100 w-[48px] h-[48px]'>
                       <Image
                       className='m-3'
@@ -80,9 +90,9 @@ const CategoryHome = () => {
                       <p className='font-normal text-base'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         
 
-                    </div>
+                    </div>*/}
 
-                </div>
+                </div> 
 
                 <div className='m-10 flex flex-row items-center'>
                   
@@ -93,6 +103,8 @@ const CategoryHome = () => {
                     height={700}
                     alt="image"
                     />
+
+              
                
 
 
@@ -100,16 +112,16 @@ const CategoryHome = () => {
                  
                   <div className='z-40 -ml-[370px] mt-[120px] w-[706px] h-[590px] border-2 border-white bg-white'>
                     <div className='flex flex-col m-20 space-y-3'>
-                      <h4 className='text-base font-semibold uppercase'>
+                      <h4 className='font-inter text-base font-semibold uppercase'>
                       Why we started 
                       </h4>
-                      <h1 className='max-h-48 w-[440px] text-4xl font-bold  '>
+                      <h1 className='font-sen max-h-48 w-[440px] text-4xl font-bold  '>
                       It started out as a simple idea and evolved into our passion
                       </h1>
-                      <p className='text-[#6D6E76] w-[546px] text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                      <p className='font-inter text-[#6D6E76] w-[546px] text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 
                       <div className='flex flex-row items-center border-2 w-[270px] h-[56px] border-[#FFD050] bg-[#FFD050]'>
-                        <Link href="/" className='max-w-[204px] pl-[35px] text-lg font-bold text-[#232536]'>Discover our story  </Link>
+                        <Link href="/" className='font-sen max-w-[204px] pl-[35px] text-lg font-bold text-[#232536]'>Discover our story  </Link>
                         <IoIosArrowForward />
                        
 
@@ -124,13 +136,14 @@ const CategoryHome = () => {
                 {/* author part */}
 
                 <div className='m-10'>
-                  <h1 className='text-4xl font-bold text-center'>
+                  <h1 className='font-sen text-4xl font-bold text-center'>
                   List of Authors
                   </h1>
 
                   {/* author list */}
-                  <div className='mt-10 flex flex-row items-center justify-between'>
-                    {/* author box 1 */}
+                  <div className='mt-10 flex flex-col md:flex-row items-center justify-between'>
+                    {/* author box 1 */}+
+
                     <Link href="/author">
                     <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
@@ -140,8 +153,8 @@ const CategoryHome = () => {
                       height={128}
                       alt="author pic"
                       />
-                      <h1 className='font-bold text-2xl'>Floyd Miles</h1>
-                      <p className='text-[#6D6E76] text-sm font-base'>Content Writer @Company</p>
+                      <h1 className='font-sen font-bold text-2xl'>Floyd Miles</h1>
+                      <p className='font-inter text-[#6D6E76] text-sm font-base'>Content Writer @Company</p>
                       <div className='flex flex-row items-center space-x-3 '>
                          <BsFacebook className='fill-[#232536] ' />
                         <AiOutlineTwitter className='fill-[#232536]' />
@@ -164,8 +177,8 @@ const CategoryHome = () => {
                       height={128}
                       alt="author pic"
                       />
-                      <h1 className='font-bold text-2xl'>Dianne Russell</h1>
-                      <p className='text-[#6D6E76] text-sm font-base'>Content Writer @Company</p>
+                      <h1 className='font-sen font-bold text-2xl'>Dianne Russell</h1>
+                      <p className='font-inter text-[#6D6E76] text-sm font-base'>Content Writer @Company</p>
                       <div className='flex flex-row items-center space-x-3 '>
                          <BsFacebook className='fill-[#232536] ' />
                         <AiOutlineTwitter className='fill-[#232536]' />
@@ -188,8 +201,8 @@ const CategoryHome = () => {
                       height={128}
                       alt="author pic"
                       />
-                      <h1 className='font-bold text-2xl'>Jenny Wilson</h1>
-                      <p className='text-[#6D6E76] text-sm font-base'>Content Writer @Company</p>
+                      <h1 className='font-bold font-sen text-2xl'>Jenny Wilson</h1>
+                      <p className='font-inter text-[#6D6E76] text-sm font-base'>Content Writer @Company</p>
                       <div className='flex flex-row items-center space-x-3 '>
                          <BsFacebook className='fill-[#232536] ' />
                         <AiOutlineTwitter className='fill-[#232536]' />
@@ -211,8 +224,8 @@ const CategoryHome = () => {
                       height={128}
                       alt="author pic"
                       />
-                      <h1 className='font-bold text-2xl'>Leslie Alexander</h1>
-                      <p className='text-[#6D6E76] text-sm font-base'>Content Writer @Company</p>
+                      <h1 className='font-bold font-sen  text-2xl'>Leslie Alexander</h1>
+                      <p className='text-[#6D6E76] font-inter text-sm font-base'>Content Writer @Company</p>
                       <div className='flex flex-row items-center space-x-3 '>
                          <BsFacebook className='fill-[#232536] ' />
                         <AiOutlineTwitter className='fill-[#232536]' />
@@ -233,10 +246,10 @@ const CategoryHome = () => {
 
                 {/* logo */}
 
-                <div className='m-10 flex flex-row items-center justify-between'>
+                <div className='m-10 flex flex-col space-y-5 md:flex-row items-center justify-between'>
                   <div>
-                  <p className='text-[#6D6E76]'>We are</p>
-                    <h1 className='text-2xl font-bold'>Featured in</h1>
+                  <p className='text-[#6D6E76] font-inter '>We are</p>
+                    <h1 className='font-sen text-2xl font-bold'>Featured in</h1>
 
                   </div>
                   <Image
@@ -279,12 +292,12 @@ const CategoryHome = () => {
                 {/* TESTIMONIALs parts */}
 
                 <div className='h-[646px] bg-[#FBF6EA] m-10'>
-                  <div className='flex flex-row items-center justify-between'>
+                  <div className='flex flex-row items-center md:justify-between'>
                     {/* left */}
                   <div className='m-20 space-y-5 flex flex-col'>
-                    <h4 className='text-base font-semibold uppercase'>TESTIMONIALs</h4>
-                    <h1 className='text-4xl max-w-xs font-bold'>What people say about our blog</h1>
-                    <p className='max-w-xs text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <h4 className='font-inter text-base font-semibold uppercase'>TESTIMONIALs</h4>
+                    <h1 className='font-sen text-4xl max-w-xs font-bold'>What people say about our blog</h1>
+                    <p className='font-inter max-w-xs text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     
                     </div>
                     {/* border */}
@@ -293,7 +306,7 @@ const CategoryHome = () => {
                     </div>
                     {/* right side */}
                     <div className='m-10 flex flex-col space-y-10'>
-                      <p className='max-w-md text-2xl font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p className='font-sen max-w-md text-2xl font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <div className='flex flex-row items-center justify-between'>
                         <div className='flex flex-row space-x-3'>
                         <Image
@@ -304,8 +317,8 @@ const CategoryHome = () => {
                       />  
                       <div>
 
-                      <h2 className='text-2xl font-bold'>Jonathan Vallem</h2>
-                      <p className='text-base font-normal text-[#6D6E76]'>New york, USA</p>
+                      <h2 className='font-sen text-2xl font-bold'>Jonathan Vallem</h2>
+                      <p className='font-inter text-base font-normal text-[#6D6E76]'>New york, USA</p>
                       </div>
 
                       </div>
@@ -337,8 +350,8 @@ const CategoryHome = () => {
                 {/* join our team */}
 
                 <div className='m-20 flex flex-col items-center space-y-5'>
-                  <h1 className='max-w-sm text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
-                  <p className='w-[404px] text-center text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <h1 className='font-sen max-w-sm text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
+                  <p className='font-inter w-[404px] text-center text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                   <Link href="/" className='px-10 py-3 text-lg font-bold border-2 border-[#FFD050] bg-[#FFD050] font-sen'>Join Now</Link>
                   </div>
 

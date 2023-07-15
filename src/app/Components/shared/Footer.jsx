@@ -29,7 +29,7 @@ const Footer = () => {
 
             </div>
             {/* menu items*/}
-            <div className='hidden md:flex items-center space-x-4 text-[#FFFFFF] text-base font-normal'>
+            <div className='hidden md:flex font-inter items-center space-x-4 text-[#FFFFFF] text-base font-normal'>
                 <Link href="/">Home</Link>
                 <Link href="/blog">Blog</Link>
                 <Link href="/">About Us</Link>
@@ -46,13 +46,13 @@ const Footer = () => {
         <div className='bg-gray-700 mx-3 my-2 md:mx-20 md:my-3'>
           <div className='m-20 flex flex-col md:flex-row items-center justify-between'>
             <div className='maz-w-sm md:max-w-xl my-20 mx-15'>
-              <h2 className='text-4xl font-medium text-[#FFFFFF]'>Subscribe to our news letter to get latest updates and news</h2>
+              <h2 className='font-sen text-4xl font-medium text-[#FFFFFF]'>Subscribe to our news letter to get latest updates and news</h2>
             </div>
               <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4'>
-              <input type="" className="pl-5 py-3 bg-gray-700 border-2 border-[#4C4C4C]" value="Enter Your Email" />
+              <input type="" className="font-inter pl-5 py-3 bg-gray-700 border-2 border-[#4C4C4C]" value="Enter Your Email" />
 
 
-               <button className='px-10 py-3 border-2 border-[#4C4C4C]  bg-[#FFD050] '> Subscribe</button>
+               <button className='font-sen px-10 py-3 border-2 border-[#4C4C4C]  bg-[#FFD050] '> Subscribe</button>
 
               </div>
              
@@ -63,7 +63,7 @@ const Footer = () => {
 
         {/* footer icon */}
         <div className='flex flex-col md:flex-row items-center justify-between mx-20 my-3 '>
-          <div className='text-[#FFFFFF]'>
+          <div className='text-[#FFFFFF] font-inter '>
             <p>Finstreet 118 2561 Fintown</p>
             <p>Hello@finsweet.com  020 7993 2905</p>
           </div>

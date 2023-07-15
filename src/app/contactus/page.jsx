@@ -37,13 +37,13 @@ const page = () => {
             </div>
 
             <div className='mx-[350px] my-10 '>
-                <form className='flex flex-col space-y-5 '>
+                {/* <form className='flex flex-col space-y-5 '>
                     <input className="pl-10 py-5 border-2 border-[#e2e8f0] text-base font-normal" type="text" name="Fullname" value="Full Name" />
                     <input className="pl-10 py-5 border-2 border-[#e2e8f0] text-base font-normal" type="text" name="Fullname" value="Your Email" />
                     <input className="pl-10 py-5 border-2 border-[#e2e8f0] text-base font-normal" type="text" name="Fullname" value="Query Related  " />
                     <input className="pl-10 pt-8 pb-[200px] border-2 border-[#e2e8f0] text-base font-normal" type="text" name="Fullname" value="Message" />
                     <button className='pl-10 py-5 border-2 border-[#FFD050] bg-[#FFD050] text-2xl font-bold'>Send Message</button>
-                </form>
+                </form> */}
             </div>
 
             

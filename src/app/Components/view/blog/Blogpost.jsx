@@ -18,7 +18,7 @@ const Blogpost = () => {
                         <div className={` flex flex-col md:flex-row items-center space-x-5 space-y-5 ${index===1 && "bg-white"}`}>
                             <div>
                                 <Image
-                                src={item.image} width={490} height={318} />
+                                src={item.image} width={490} height={318} alt="image" />
                             </div>
                             <div className='flex flex-col space-y-5'>
                                 <h4 className='text-base font-inter font-medium text-[#592EA9] uppercase'>{item.title}</h4>

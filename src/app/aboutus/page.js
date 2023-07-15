@@ -7,7 +7,7 @@ const page = () => {
   return (
     <section>
         <div className='container'>
-          <div className='mt-10 ml-[200px] flex flex-row items-center space-x-5'>
+          <div className='mt-10 ml-[200px] flex flex-col md:flex-row items-center space-x-5'>
             <div className=' relative z-10 py-20 px-10 w-[624px] h-[356px] border-1 border-white bg-white flex flex-col space-y-2' >
               <h4 className='text-base font-medium uppercase font-inter'>ABOUT US</h4>
               <h1 className='max-w-xl font-sen font-bold text-5xl '>We are a team of content writers who share their learnings</h1>
@@ -64,8 +64,8 @@ const page = () => {
           
 
 
-          <div className='bg-[#F4F0F8] max-h-96 mx-10'>
-            <div className='p-20 flex flex-row space-x-4'>
+          <div className='bg-[#F4F0F8] h-full md:max-h-96 mx-10'>
+            <div className='p-20 flex flex-col md:flex-row space-x-4'>
               <div className='flex flex-col'>
                 <h4 className='text-base font-medium font-sen uppercase'>Our mision</h4>
                 <h1 className='max-w-md text-2xl font-bold font-sen'>Creating valuable content for creatives all around the world</h1>

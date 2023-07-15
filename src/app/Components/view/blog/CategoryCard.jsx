@@ -16,7 +16,7 @@ const CategoryCard = () => {
                     CategoryData.map((item,index)=>(
                         <div className={`flex flex-col p-5 space-y-2 w-[296px] h-[228px] border-2 border-stone-100 hover:bg-[#FFD050] ${index===1 && "bg-white"}`}>
                             <div className='border-1 border-stone-300 rounded-md bg-stone-100  w-[48px] h-[48px]'>
-                                <Image className="m-3" src={item.image} width={23} height={23} />
+                                <Image className="m-3" src={item.image} width={23} height={23} alt="image" />
                             </div>
                             <h3>{item.title}</h3>
                             <p>{item.subtitle}</p>

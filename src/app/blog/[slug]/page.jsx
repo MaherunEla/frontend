@@ -52,6 +52,7 @@ const page = () => {
             src="/assets/images/Blog/blogpost.png"
             width={1280}
             height={582}
+            alt="post"
             />
 
             <div className='max-w-3xl mx-[220px] my-20'>
@@ -76,6 +77,7 @@ const page = () => {
                 src="/assets/images/Blog/pointer.svg"
                 width={5}
                 height={5}
+                alt="pointer"
                 />
                 <p className='font-sen text-2xl font-bold text-[#161722]'>Lorem ipsum dolor sit amet</p>
 
@@ -86,6 +88,7 @@ const page = () => {
                 src="/assets/images/Blog/pointer.svg"
                 width={5}
                 height={5}
+                alt="pointer"
                 />
                 <p className='font-sen text-2xl font-bold text-[#161722]'>Non blandit massa enim nec scelerisque</p>
 
@@ -96,6 +99,7 @@ const page = () => {
                 src="/assets/images/Blog/pointer.svg"
                 width={5}
                 height={5}
+                alt="pointer"
                 />
                 <p className='font-sen text-2xl font-bold text-[#161722]'>Neque egestas congue quisque egestas</p>
 
@@ -128,6 +132,7 @@ const page = () => {
                         src="/assets/images/Blog/post1.png"
                         width={405}
                         height={318}
+                        alt="post1"
                         />
                         
                         <h4 className='text-base font-medium '>By <span className='text-[#592EA9]'>John Doe</span>   l   Aug 23, 2021 </h4>
@@ -143,6 +148,7 @@ const page = () => {
                         src="/assets/images/Blog/post2.png"
                         width={405}
                         height={318}
+                        alt="post2"
                         />
                         
                         <h4 className='text-base font-medium '>By <span className='text-[#592EA9]'>John Doe</span>   l   Aug 23, 2021 </h4>
@@ -158,6 +164,7 @@ const page = () => {
                         src="/assets/images/Blog/post3.png"
                         width={405}
                         height={318}
+                        alt="post3"
                         />
                         
                         <h4 className='text-base font-medium '>By <span className='text-[#592EA9]'>John Doe</span>   l   Aug 23, 2021 </h4>
