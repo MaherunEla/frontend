@@ -2,7 +2,7 @@
 "use client";
 import React from 'react'
 import { useRouter } from 'next/navigation';
-import { CategoryData } from '../Components/view/blog/CategoryData'
+import { CategoryData } from '../../Components/view/blog/CategoryData'
 
 const page = () => {
     const router = useRouter()

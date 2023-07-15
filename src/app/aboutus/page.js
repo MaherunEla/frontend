@@ -7,19 +7,38 @@ const page = () => {
   return (
     <section>
         <div className='container'>
-          <div className="relative w-[1280px] h-[444px] bg-cover bg-center bg-[url('/assets/images/About/aboutbg.png')]">
+          <div className='mt-10 ml-[200px] flex flex-row items-center space-x-5'>
+            <div className=' relative z-10 py-20 px-10 w-[624px] h-[356px] border-1 border-white bg-white flex flex-col space-y-2' >
+              <h4 className='text-base font-medium uppercase font-inter'>ABOUT US</h4>
+              <h1 className='max-w-xl font-sen font-bold text-5xl '>We are a team of content writers who share their learnings</h1>
+
+            </div>
+            <p className='max-w-md text-base font-inter font-normal text-[#4C4C4C] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div className="relative -mt-10 w-[1280px] h-[444px] bg-cover bg-center bg-[url('/assets/images/About/aboutbg.png')]">
           {/* <Image
             src="/assets/images/About/aboutbg.png"
             width={1280}
             height={444}
             alt="group"
             /> */}
-           <div className=' mt-[40px] flex flex-col '>
-            <div className='max-h-36 max-w-xl bg-[#FFD050] border-2 border-[#FFD050]'>
-              <div className='flex flex-row'>
+           <div className='pt-[277px]  flex flex-col'>
+            <div className='ml-[100px] p-10 max-h-36 max-w-xl bg-[#FFD050] border-2 border-[#FFD050]'>
+              <div className='flex flex-row space-x-10'>
                 <div>
-                <h1 className='font-sen'>12+</h1>
-                <p>Blogs Published</p>
+                <h1 className='font-sen text-5xl font-bold'>12+</h1>
+                <p className='text-base font-inter font-normal'>Blogs Published</p>
+
+                </div>
+                <div>
+                <h1 className='font-sen text-5xl font-bold'>18K+</h1>
+                <p className='text-base font-inter font-normal'>Views on Finsweet</p>
+
+                </div>
+
+                <div>
+                <h1 className='font-sen text-5xl font-bold'>30K+</h1>
+                <p className='text-base font-inter font-normal'>Total active Users</p>
 
                 </div>
                 
