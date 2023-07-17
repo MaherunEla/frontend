@@ -6,9 +6,9 @@ import CategoryHome from './CategoryHome'
 const PageHome = () => {
   return (
     <>
-    <HeroHome />
-    <AboutHome />
-    <CategoryHome />
+     <HeroHome /> 
+     <AboutHome /> 
+     <CategoryHome /> 
     </>
     
   )
