@@ -13,7 +13,7 @@ const Authorlist = () => {
         <div className='grid grid-cols-1 gap:4 md:grid-cols-4 lg-grid-cols-8'>
             {
                 authordata.map((item,index)=>(
-                  <Link href={`/author/${item.slug}`}>
+                  <Link href={`/author/${item.slug}`} key={index}>
                     <div className='mb-10 flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                   <Image
                   className='mt-5'

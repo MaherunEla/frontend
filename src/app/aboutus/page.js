@@ -6,16 +6,16 @@ import Authorlist from '../Components/view/about/Authorlist'
 const page = () => {
   return (
     <section>
-        <div className='container'>
-          <div className='mt-10 ml-[200px] flex flex-col md:flex-row items-center space-x-5'>
-            <div className=' relative z-10 py-20 px-10 w-[624px] h-[356px] border-1 border-white bg-white flex flex-col space-y-2' >
+        
+          <div className='relative container px-20 mt-10 flex flex-col md:flex-row items-center space-x-5'>
+            <div className='z-10  -mb-10 py-20 px-10 w-[624px] h-[356px] border-1 border-white bg-white flex flex-col space-y-2' >
               <h4 className='text-base font-medium uppercase font-inter'>ABOUT US</h4>
               <h1 className='max-w-xl font-sen font-bold text-5xl '>We are a team of content writers who share their learnings</h1>
 
             </div>
             <p className='max-w-md text-base font-inter font-normal text-[#4C4C4C] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <div className="relative -mt-10 w-[1280px] h-[444px] bg-cover bg-center bg-[url('/assets/images/About/aboutbg.png')]">
+          <div className="relative container -mt-10 w-full h-[444px] bg-cover bg-center bg-[url('/assets/images/About/aboutbg.png')]">
           {/* <Image
             src="/assets/images/About/aboutbg.png"
             width={1280}
@@ -64,8 +64,8 @@ const page = () => {
           
 
 
-          <div className='bg-[#F4F0F8] h-full md:max-h-96 mx-10'>
-            <div className='p-20 flex flex-col md:flex-row space-x-4'>
+          <div className=' container bg-[#F4F0F8] h-full md:max-h-96 '>
+            <div className=' p-20 flex flex-col md:flex-row space-x-4'>
               <div className='flex flex-col'>
                 <h4 className='text-base font-medium font-sen uppercase'>Our mision</h4>
                 <h1 className='max-w-md text-2xl font-bold font-sen'>Creating valuable content for creatives all around the world</h1>
@@ -85,12 +85,12 @@ const page = () => {
           </div>
 
 
-          <div className='m-10 grid grid-cols-1 gap-20 md:grid-cols-2 items-center'>
+          <div className='relative container grid grid-cols-1 gap-y-5 md:grid-cols-2 items-center'>
             
               <div className='flex flex-col space-y-2 '>
                 <h1 className='text-4xl font-sen font-bold '>Our team of creatives</h1>
-                <h4 className='font-sen text-2xl font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                <h4 className='max-w-lg font-sen text-2xl font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                <p className='max-w-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
               </div>
               <div className='flex flex-row'>
               <Image
@@ -101,9 +101,8 @@ const page = () => {
              alt="shapes"
              />
              <Image
-              
              src="/assets/images/About/abouthero.png"
-             width={624}
+             width={620}
              height={480}
              alt="abouthero"
              />
@@ -149,7 +148,7 @@ const page = () => {
                   <Link href="/" className='px-10 py-3 text-lg font-bold border-2 border-[#FFD050] bg-[#FFD050] font-sen'>Join Now</Link>
                   </div>
 
-        </div>
+        
     </section>
 
     

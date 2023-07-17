@@ -1,11 +1,20 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CategoryData } from './CategoryData'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import { CategoryData } from '../blog/CategoryData'
 import {IoIosArrowForward } from "react-icons/io"
 import {BsFacebook,BsArrowRight,BsArrowLeft} from 'react-icons/bs'
 import {AiOutlineTwitter, AiFillLinkedin} from 'react-icons/ai'
 import {BiLogoInstagram} from 'react-icons/bi'
+import SwiperPreviousButton from './SwiperPreviousButton';
+import SwiperNextButton from './SwiperNextButton';
+import { authordata } from '../about/Authordata';
 
 const CategoryHome = () => {
   return (
@@ -16,7 +25,7 @@ const CategoryHome = () => {
             <div className='m-10 flex flex-row items-center justify-between '>
               {
                CategoryData.map((item,index)=>(
-                <Link href={`/category/${item.slug}`}>
+                <Link href={`/category/${item.slug}`} key={index}>
 
                
                 
@@ -290,9 +299,20 @@ const CategoryHome = () => {
 
                 </div>
                 {/* TESTIMONIALs parts */}
-
-                <div className='h-[646px] bg-[#FBF6EA] m-10'>
-                  <div className='flex flex-row items-center md:justify-between'>
+             
+             <Swiper
+      spaceBetween={50}
+      slidesPerView={1}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log('swiper')}
+      
+    >
+       {
+          authordata.map((item,index)=>(
+      <SwiperSlide >
+       
+            <div className='h-[640px] bg-[#FBF6EA] m-10'>
+                  <div className='flex flex-col md:flex-row items-center md:justify-between'>
                     {/* left */}
                   <div className='m-20 space-y-5 flex flex-col'>
                     <h4 className='font-inter text-base font-semibold uppercase'>TESTIMONIALs</h4>
@@ -301,7 +321,7 @@ const CategoryHome = () => {
                     
                     </div>
                     {/* border */}
-                    <div className=' h-[350px] w-[2px] bg-[#6D6E76] m-10'>
+                    <div className='hidden md:flex h-[350px] w-[2px] bg-[#6D6E76] m-10'>
 
                     </div>
                     {/* right side */}
@@ -310,24 +330,24 @@ const CategoryHome = () => {
                       <div className='flex flex-row items-center justify-between'>
                         <div className='flex flex-row space-x-3'>
                         <Image
-                      src="/assets/images/Home/Profile.png"
+                      src={item.image}
                       width={48}
                       height={48}
                       alt="Profile"
                       />  
                       <div>
 
-                      <h2 className='font-sen text-2xl font-bold'>Jonathan Vallem</h2>
+                      <h2 className='font-sen text-2xl font-bold'>{item.author}</h2>
                       <p className='font-inter text-base font-normal text-[#6D6E76]'>New york, USA</p>
                       </div>
 
                       </div>
                       
-                      <div className='flex flex-row space-x-20'>
+                      <div className='flex flex-row space-x-5'>
 
-                      <BsArrowLeft />
+                      <SwiperPreviousButton />
 
-                      <BsArrowRight />
+                      <SwiperNextButton />
                       </div>
 
                       
@@ -345,7 +365,23 @@ const CategoryHome = () => {
                   
 
 
-                </div>
+                </div> 
+         
+      
+
+      </SwiperSlide>
+       )
+       )
+
+
+
+     }
+      
+      
+    </Swiper>
+
+             </div>
+                
 
                 {/* join our team */}
 
@@ -356,9 +392,9 @@ const CategoryHome = () => {
                   </div>
 
             
-        </div>
+        
     </section>
   )
 }
 
-export default CategoryHome
+export default CategoryHome;

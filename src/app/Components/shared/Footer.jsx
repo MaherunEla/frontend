@@ -8,12 +8,12 @@ import {BiLogoInstagram} from 'react-icons/bi'
 const Footer = () => {
   return (
     <section>
-      <div className='bg-[#232536] container'>
-        <div className='p-10'>
+      <div className='bg-[#232536] '>
+        <div className='p-5 md:p-10 container'>
           {/* footer nav */}
         <div>
-          <div className='relative bg-[#232536] px-20 py-3'>
-            <div className='flex items-center justify-between'>
+          <div className='relative bg-[#232536] px-0 md:px-20 py-5 md:py-3'>
+            <div className='flex flex-col space-y-2 md:flex-row items-center justify-between'>
                 {/* logo */}
 
             <div>
@@ -29,7 +29,7 @@ const Footer = () => {
 
             </div>
             {/* menu items*/}
-            <div className='hidden md:flex font-inter items-center space-x-4 text-[#FFFFFF] text-base font-normal'>
+            <div className='flex flex-col md:flex-row font-inter items-start space-x-2 md:space-x-4 text-[#FFFFFF] text-base font-normal'>
                 <Link href="/">Home</Link>
                 <Link href="/blog">Blog</Link>
                 <Link href="/">About Us</Link>
@@ -48,7 +48,7 @@ const Footer = () => {
             <div className='maz-w-sm md:max-w-xl my-20 mx-15'>
               <h2 className='font-sen text-4xl font-medium text-[#FFFFFF]'>Subscribe to our news letter to get latest updates and news</h2>
             </div>
-              <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4'>
+              <div className='flex flex-col md:flex-row my-10 space-y-2 md:space-y-0 md:space-x-4'>
               <input type="" className="font-inter pl-5 py-3 bg-gray-700 border-2 border-[#4C4C4C]" value="Enter Your Email" />
 
 

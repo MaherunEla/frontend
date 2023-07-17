@@ -6,14 +6,14 @@ const page = () => {
         <div className='container '>
             <div className='mt-20 flex flex-col items-center space-y-5 '>
                 <h4 className='font-inter font-black text-base text-[#232536]'>Contact us</h4>
-                <h1 className='text-5xl font-bold '>Let’s Start a Conversation</h1>
+                <h1 className='text-5xl text-center font-bold '>Let’s Start a Conversation</h1>
                 <p className='max-w-3xl text-center text-base font-normal text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
 
                 
             </div>
 
-            <div className='mx-[350px] mt-20 mb-10 p-10 max-w-3xl max-h-60 bg-[#592EA9]'>
-                <div className='flex flex-row space-x-20'>
+            <div className='md:mx-[320px] mx-0 mt-20 mb-10 p-10 w-full h-full md:max-w-3xl md:max-h-60 bg-[#592EA9]'>
+                <div className='flex flex-col space-y-4 md:flex-row md:space-x-20'>
                     <div className='flex flex-col space-y-2'>
                         <h4 className='pb-2 text-sm font-normal text-[#FFFFFF] opacity-25'>Working hours</h4>
                         <div className='w-[294px] h-[1px] bg-[#FFFFFF] opacity-20'></div>

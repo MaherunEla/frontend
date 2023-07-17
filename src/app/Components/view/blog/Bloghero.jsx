@@ -6,9 +6,9 @@ import {IoIosArrowForward } from "react-icons/io"
 const Bloghero = () => {
   return (
     <section>
-        <div className='container  bg-[#F4F0F8]'>
+        <div className=' bg-[#F4F0F8]'>
             
-            <div className=' px-10 py-10 flex flex-col md:flex-row items-center justify-between'>
+            <div className='container  px-10 py-10 flex flex-col md:flex-row items-center justify-between'>
               <div className='p-10 flex flex-col space-y-5 '>
                   <h4 className='text-base font-inter uppercase font-medium text-[#232536]'>Featured Post</h4>
                   <h1 className='max-w-xl text-4xl font-bold '>Step-by-step guide to choosing great font pairs</h1>

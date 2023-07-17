@@ -2,13 +2,13 @@
 "use client";
 import React from 'react'
 import { useParams } from 'next/navigation'
-import { CategoryData } from '@/app/Components/view/Home/CategoryData'
+import { CategoryData } from '@/app/Components/view/blog/CategoryData';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const page = () => {
     const param = useParams()
-    const category = CategoryData.find(e=>e.slug = param?.slug)
+    const category = CategoryData.find(e=>e.slug === param?.slug)
     console.log = ({param,category});
   return (
     <section>
@@ -17,7 +17,7 @@ const page = () => {
               <div className=' flex flex-col items-center space-y-3'>
               <h1 className='font-sen text-5xl font-bold'>{category?.title}</h1>
                 <p className='max-w-lg text-center font-inter text-base font-normal text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                <h4 className='font-inter text-base font-medium uppercase'>Blog &#8250; Business</h4>
+                <h4 className='font-inter text-base font-medium uppercase'>Blog &#8250; {category?.title}</h4>
 
               </div>
                 
@@ -36,7 +36,7 @@ const page = () => {
                 alt="post"
                 />
                 <div className='flex flex-col space-y-3 max-w-lg'>
-                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>Business</h4>
+                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>{category?.title}</h4>
                 <h1 className='font-sen text-4xl font-bold '>Top 6 free website mockup tools 2022</h1>
                 <p className='text-[#6D6E76] font-inter text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.</p>
 
@@ -52,7 +52,7 @@ const page = () => {
                 alt="post"
                 />
                 <div className='flex flex-col space-y-3 max-w-lg'>
-                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>Business</h4>
+                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>{category?.title}</h4>
                 <h1 className='font-sen text-4xl font-bold '>Top 6 free website mockup tools 2022</h1>
                 <p className='text-[#6D6E76] font-inter text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.</p>
 
@@ -68,7 +68,7 @@ const page = () => {
                 alt="post"
                 />
                 <div className='flex flex-col space-y-3 max-w-lg'>
-                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>Business</h4>
+                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>{category?.title}</h4>
                 <h1 className='font-sen text-4xl font-bold '>Top 6 free website mockup tools 2022</h1>
                 <p className='text-[#6D6E76] font-inter text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.</p>
 
@@ -84,7 +84,7 @@ const page = () => {
                 alt="post"
                 />
                 <div className='flex flex-col space-y-3 max-w-lg'>
-                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>Business</h4>
+                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>{category?.title}</h4>
                 <h1 className='font-sen text-4xl font-bold '>Top 6 free website mockup tools 2022</h1>
                 <p className='text-[#6D6E76] font-inter text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.</p>
 
@@ -99,7 +99,7 @@ const page = () => {
                 alt="post"
                 />
                 <div className='flex flex-col space-y-3 max-w-lg'>
-                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>Business</h4>
+                <h4 className='font-inter text-base font-medium uppercase text-[#592EA9]'>{category?.title}</h4>
                 <h1 className='font-sen text-4xl font-bold '>Top 6 free website mockup tools 2022</h1>
                 <p className='text-[#6D6E76] font-inter text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.</p>
 
