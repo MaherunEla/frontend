@@ -4,14 +4,14 @@ import Link from 'next/link'
 import {IoIosArrowForward} from 'react-icons/io'
 const AboutHome = () => {
   return (
-    <section>
-        <div className='relative'>
+    
+        <div className='container px-5 py-5 '>
             {/* feature */}
-            <div className='mx-5 my-5 md:mx-20  md:my-20 flex flex-col space-y-3 md:space-y-0  md:flex-row justify-between space-x-4 '>
+            <div className='flex flex-col space-y-3 md:space-y-0  md:flex-row justify-between space-x-4 '>
                 {/* left side */}
-                <div className='container flex flex-col space-y-10  '>
+                <div className=' flex flex-col space-y-10  '>
                     <h1 className='font-sen text-center md:text-start text-2xl md:text-4xl font-bold text-[#232536]'>Featured Post</h1>
-                    <div className='border-[1px] border-inherit  p-7 space-y-5'>
+                    <div className='border-[1px] border-inherit   space-y-5'>
                         <Image
                         src="/assets/images/Home/homeab.png"
                         width={669}
@@ -130,7 +130,7 @@ const AboutHome = () => {
             </div>
 
         </div>
-    </section>
+    
   )
 }
 

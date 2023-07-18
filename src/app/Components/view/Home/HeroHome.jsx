@@ -9,9 +9,9 @@ const HeroHome = () => {
       <div className="relative bg-[url('/assets/images/Home/homebg.png')] bg-cover bg-center bg-no-repeat h-auto w-auto md:w-full  md:h-screen"> 
         <div className='absolute bg-black/50 h-full inset-0'></div>
         
-        < div className='container flex relative z-10 flex-col  py-[128px] space-y-5 items-center md:items-start'>
+        < div className='container flex relative z-10 flex-col  py-[128px] space-y-5 items-center md:items-start md:ml-[100px] '>
            
-                <h4 className='text-[#FFFFFF] font-inter text-base font-light text-[#FFFFFF] '>Posted on <span className='font-medium'>startup</span></h4>
+                <h4 className='text-white font-inter text-base font-light  '>Posted on <span className='font-medium'>startup</span></h4>
             
             
                 <h1 className='font-sen text-[#FFFFFF] font-bold text-3xl md:text-5xl max-w-3xl text-center md:text-start'>Step-by-step guide to choosing great font pairs</h1>

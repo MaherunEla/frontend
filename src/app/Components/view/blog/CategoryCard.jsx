@@ -7,8 +7,8 @@ import Link from 'next/link'
 const CategoryCard = () => {
   return (
     <section>
-        <div className='container p-20 '>
-            <h1 className='py-5 text-4xl font-bold'>All Categories</h1>
+        <div className='container md:p-20 '>
+            <h1 className='py-5 text-2xl md:text-4xl font-bold text-center md:text-start'>All Categories</h1>
             
 
             <div className='grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-4'>
@@ -33,11 +33,12 @@ const CategoryCard = () => {
 
             {/* join our team */}
 
-            <div className='m-20 flex flex-col items-center space-y-5'>
-                  <h1 className='max-w-sm text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
-                  <p className='w-[404px] text-center text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                  <Link href="/" className='w-[174px] h-[56px] pt-3 text-center text-lg font-bold text-[#232536] border-2 border-[#FFD050] bg-[#FFD050]'>Join Now</Link>
-                  </div>
+            <div className='m-10 md:m-20 flex flex-col items-center space-y-5'>
+                  <h1 className='font-sen w-[200px] md:max-w-sm text-xl md:text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
+                  <p className='font-inter w-[150px] md:w-[404px] text-center text-sm md:text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <Link href="/" className=' px-10 py-3 text-sm md:text-lg font-bold border-2 border-[#FFD050] bg-[#FFD050] font-sen'>Join Now</Link>
+                  </div> 
+                  
 
         </div>
     </section>

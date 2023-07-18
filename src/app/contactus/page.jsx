@@ -6,7 +6,7 @@ const page = () => {
         <div className='container '>
             <div className='mt-20 flex flex-col items-center space-y-5 '>
                 <h4 className='font-inter font-black text-base text-[#232536]'>Contact us</h4>
-                <h1 className='text-5xl text-center font-bold '>Let’s Start a Conversation</h1>
+                <h1 className='text-2xl md:text-5xl text-center font-bold '>Let’s Start a Conversation</h1>
                 <p className='max-w-3xl text-center text-base font-normal text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
 
                 

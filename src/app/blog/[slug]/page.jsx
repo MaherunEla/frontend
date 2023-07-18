@@ -17,9 +17,9 @@ const page = () => {
             <div className='m-20 flex flex-col items-center space-y-5'>
                 <div className='flex flex-col md:flex-row space-x-5'>
                     <Image
-                    className=""
+                    className="w-[100px] h-[100px] md:w-[48px] md:h-[48px]"
                     alt='author'
-                    src={blog?.image}
+                    src="/assets/images/Home/Profile.png"
                     width={48}
                     height={48}
                     />
@@ -33,8 +33,8 @@ const page = () => {
                     
 
                 </div>
-                <h1 className='max-w-3xl text-4xl pl-[245px] font-bold font-sen '>Step-by-step guide to choosing great font pairs</h1>
-                <div className='flex flex-row pr-[165px] space-x-2'>
+                <h1 className='md:max-w-3xl text-2xl md:text-4xl md:pl-[245px] font-bold font-sen '>Step-by-step guide to choosing great font pairs</h1>
+                <div className='ml-20 md:ml-0 flex flex-row pr-[165px] space-x-2'>
                     <Image
                     alt='logo'
                     src="/assets/images/Home/shuttle.svg"
@@ -49,20 +49,21 @@ const page = () => {
 
             {/* blog post image */}
             <Image 
+            className='w-[200px] h-[200px] md:w-[1280px] md:h-[582px]'
             src="/assets/images/Blog/blogpost.png"
             width={1280}
             height={582}
             alt="post"
             />
 
-            <div className='max-w-3xl mx-[220px] my-20'>
+            <div className='max-w-3xl md:mx-[220px] my-20'>
             <div className=' flex flex-col space-y-10'>
-                <h2 className='text-4xl font-sen font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <h2 className='text-2xl md:text-4xl font-sen font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
                 <p className='pb-10 text-base font-inter font-base text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
 
             </div>
             <div className=' flex flex-col space-y-10'>
-                <h2 className='text-4xl font-sen font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <h2 className='text-2xl md:text-4xl font-sen font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
                 <p className='text-base font-inter font-base text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
                 <p className='pb-5 text-base font-inter font-base text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
                 
@@ -108,7 +109,7 @@ const page = () => {
             <div className='pt-10 flex flex-col space-y-10'>
                 
                 <p className='text-base font-inter font-base text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
-                <h2 className='text-4xl font-sen font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <h2 className='text-2xl md:text-4xl font-sen font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
                 <p className='pb-5 text-base font-inter font-base text-[#6D6E76]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
                 
                
@@ -126,7 +127,7 @@ const page = () => {
                
 
 
-                <div className='flex flex-row space-x-5'>
+                <div className='flex flex-col space-y-5 md:flex-row space-x-5'>
                     <div className='max-w-sm flex flex-col space-y-4'>
                         <Image
                         src="/assets/images/Blog/post1.png"
@@ -183,10 +184,10 @@ const page = () => {
 
              {/* join our team */}
 
-             <div className='font-sen m-[100px] flex flex-col items-center space-y-5'>
-                  <h1 className='max-w-sm text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
-                  <p className='w-[404px] text-center text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                  <Link href="/" className='font-sen w-[174px] h-[56px] pt-3 text-center text-lg font-bold text-[#232536] border-2 border-[#FFD050] bg-[#FFD050]'>Join Now</Link>
+             <div className='m-10 md:m-20 flex flex-col items-center space-y-5'>
+                  <h1 className='font-sen w-[200px] md:max-w-sm text-xl md:text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
+                  <p className='font-inter w-[150px] md:w-[404px] text-center text-sm md:text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <Link href="/" className='px-10 py-3 text-sm md:text-lg font-bold border-2 border-[#FFD050] bg-[#FFD050] font-sen'>Join Now</Link>
                   </div>
 
             

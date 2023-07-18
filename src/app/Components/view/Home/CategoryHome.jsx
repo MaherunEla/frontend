@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
 // Import Swiper styles
 import 'swiper/css';
 
@@ -15,11 +16,12 @@ import {BiLogoInstagram} from 'react-icons/bi'
 import SwiperPreviousButton from './SwiperPreviousButton';
 import SwiperNextButton from './SwiperNextButton';
 import { authordata } from '../about/Authordata';
+import { author } from './authordata';
 
 const CategoryHome = () => {
   return (
-    <section>
-        <div className='container m-10'>
+    
+        <div className='container p-10'>
             <h1 className='font-sen m-5 text-xl md:text-4xl font-bold text-center'>Choose A Catagory</h1>
             {/* categori option */}
             <div className='md:m-10 flex flex-col space-y-5 md:flex-row items-center justify-between '>
@@ -144,26 +146,29 @@ const CategoryHome = () => {
                 </div>
                 {/* author part */}
 
-                <div className='m-10'>
+                <div className='m-5'>
                   <h1 className='font-sen text-xl md:text-4xl font-bold text-center'>
                   List of Authors
                   </h1>
 
                   {/* author list */}
-                  <div className='mt-10 flex flex-col space-y-5 md:flex-row items-center justify-between'>
+                  <div className='mt-10 flex flex-col space-y-5 md:flex-row items-center space-x-10'>
                     {/* author box 1 */}
+                    {
+                      author.map((item,index)=>(
+                        
 
-                    <Link href="/author">
-                    <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
+                    <Link href={`/author/${item.slug}`} key={index}>
+                    <div className='flex flex-col w-[280px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
                       className='mt-5 w-[80px] h-[80px] md:w-[128px] md:h-[128px]'
-                      src="/assets/images/Home/author1.png"
+                      src={item.image}
                       width={128}
                       height={128}
                       alt="author pic"
                       />
-                      <h1 className='font-sen font-bold text-xl md:text-2xl'>Floyd Miles</h1>
-                      <p className='font-inter text-[#6D6E76] text-sm font-base'>Content Writer @Company</p>
+                      <h1 className='font-sen font-bold text-xl md:text-2xl'>{item.author}</h1>
+                      <p className='font-inter text-[#6D6E76] text-sm font-base'>{item.title}</p>
                       <div className='flex flex-row items-center space-x-3 '>
                          <BsFacebook className='fill-[#232536] ' />
                         <AiOutlineTwitter className='fill-[#232536]' />
@@ -175,9 +180,12 @@ const CategoryHome = () => {
 
 
                     </Link>
-                   
+                     ))
+                    }
+                   </div>
+                   </div> 
                     {/* author box 2 */}
-                    <Link href="/author">
+                    {/* <Link href="/author">
                     <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
                       className='mt-5 w-[80px] h-[80px] md:w-[128px] md:h-[128px]'
@@ -198,10 +206,10 @@ const CategoryHome = () => {
                     </div>
 
                     </Link>
-                   
+                    */}
 
                     {/* author box 3 */}
-                    <Link href="/author">
+                    {/* <Link href="/author">
                     <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
                       className='mt-5 w-[80px] h-[80px] md:w-[128px] md:h-[128px]'
@@ -220,11 +228,11 @@ const CategoryHome = () => {
                       </div>
 
                     </div>
-                    </Link>
+                    </Link> */}
                    
 
                     {/* author box 4*/}
-                    <Link href="/author">
+                    {/* <Link href="/author">
                     <div className='flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
                       <Image
                       className='mt-5 w-[80px] h-[80px] md:w-[128px] md:h-[128px]'
@@ -246,16 +254,18 @@ const CategoryHome = () => {
 
                     </Link>
                     
+                   
+                    
 
                     
 
-                  </div>
+                  </div>*/}
 
-                </div>
+                
 
                 {/* logo */}
 
-                <div className='m-10 flex flex-col space-y-5 md:flex-row items-center justify-between'>
+                {/* <div className='m-10 flex flex-col space-y-5 md:flex-row items-center justify-between'>
                   <div>
                   <p className='text-[#6D6E76] font-inter '>We are</p>
                     <h1 className='font-sen text-xl md:text-2xl font-bold'>Featured in</h1>
@@ -302,7 +312,7 @@ const CategoryHome = () => {
                   />
                   
 
-                </div>
+                </div> */}
                 {/* TESTIMONIALs parts */}
              
              <Swiper
@@ -384,9 +394,9 @@ const CategoryHome = () => {
      }
       
       
-    </Swiper>
+    </Swiper> 
 
-             </div>
+             
                 
 
                 {/* join our team */}
@@ -398,8 +408,8 @@ const CategoryHome = () => {
                   </div>
 
             
-        
-    </section>
+        </div>
+    
   )
 }
 

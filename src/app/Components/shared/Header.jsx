@@ -12,9 +12,9 @@ const Header = () => {
         setNav(!nav);
     };
   return (
-    <section>
-        <nav className='relative  bg-[#232536] px-10 md:px-20 py-3'>
-            <div className='flex container items-center justify-between'>
+    <div className='w-full bg-[#232536] '>
+        <nav className='w-full container   md:px-20 py-3'>
+            <div className='flex  items-center justify-between'>
                 {/* logo */}
 
              <div>
@@ -57,15 +57,16 @@ const Header = () => {
             {/* Mobile menu */}
             { nav ? (
 
-            <div className='h-[330px] bg-[#232536] md:hidden'>
+            < div className='h-[360px] bg-[#232536] md:hidden'>
                 <div className=' absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-[#232536] text-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md '>
                 <Link href="/" className='font-inter w-full h-[30px] text-center hover:bg-slate-300 hover:text-black transition delay-150'>Home</Link>
                 <Link href="/blog" className='font-inter w-full h-[30px] text-center hover:bg-slate-300 hover:text-black transition delay-150'>Blog</Link>
                 <Link href="/aboutus" className='font-inter w-full h-[30px] text-center hover:bg-slate-300 hover:text-black transition delay-150'>About Us</Link>
                 <Link href="/contactus" className='font-inter w-full h-[30px] text-center hover:bg-slate-300 hover:text-black transition delay-150'>Contact Us</Link>
                 <Link href="/" className='font-sen border-2 px-10 py-2 border-[#232536] bg-[#FFFFFF] text-[#232536] hover:bg-[#FFD050]' >Subscribes</Link>
-
                 </div>
+
+                
             </div>
             ):(
 
@@ -74,7 +75,11 @@ const Header = () => {
 }
 
         </nav>
-    </section>
+
+
+    </div>
+        
+    
   )
 }
 
