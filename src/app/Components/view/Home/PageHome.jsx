@@ -1,11 +1,15 @@
+
 import React from 'react'
 import HeroHome from './HeroHome'
 import AboutHome from './AboutHome'
-import CategoryHome from './CategoryHome'
+
 import Jointeam from './jointeam'
 import Author from './author'
-import About from './About'
+
 import Category from './Category'
+import FeatureIcon from './FeatureIcon'
+import Testimonial from './Testimonial'
+import Passion from './Passion'
 
 const PageHome = () => {
   return (
@@ -14,10 +18,13 @@ const PageHome = () => {
      {/* <About/> */}
      <AboutHome /> 
      <Category />
+     <Passion />
     
       {/* <CategoryHome />   */}
       <Author/>  
-     {/* <Jointeam /> */}
+      <FeatureIcon />
+      {/* <Testimonial/> */}
+     <Jointeam />
     
      
      

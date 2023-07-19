@@ -43,8 +43,8 @@ const Footer = () => {
         </div>
 
         {/* footer middle */}
-        <div className='bg-gray-700 mx-3 my-2 md:mx-20 md:my-3'>
-          <div className='m-5 md:m-20 flex flex-col md:flex-row items-center justify-between'>
+        <div className='bg-gray-700 '>
+          <div className='flex flex-col md:flex-row items-center justify-between'>
             <div className='maz-w-sm md:max-w-xl  mt-20 mb-5 md:my-20 mx-15'>
               <h2 className='font-sen text-2xl md:text-4xl font-medium text-[#FFFFFF] text-center md:text-start'>Subscribe to our news letter to get latest updates and news</h2>
             </div>

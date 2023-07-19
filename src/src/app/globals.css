@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* position: relative; */
+    overflow-x: hidden;
+    background: white;
+    /* font-family: 'Inter', sans-serif; */
+  
+  }
+ .sb{
+  @apply border border-red-600;
+ }
+
+  /* .text-before::before {
+    content: 'online';
+    width: 100%;
+  }
+
+  .workDetails-hero-bg {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/assets/images/worksDetails/works-details-hero.png');
+  }
+
+  .alipay-bg {
+    background: linear-gradient(to right, white 45%, #00cea4 40% 55%);
+  }
+
+  .swiper > .swiper-button-next,
+  .swiper > .swiper-button-prev {
+    color: black;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+  } */
+
+
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: 1280px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: calc(100% - 80px);
+  }
+}

@@ -15,7 +15,7 @@ const Author = () => {
                   </h1>
 
                   {/* author list */}
-                  <div className='sb grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+                  <div className='pt-14  grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                     {/* author box 1 */}
                     {
                       author.map((item,index)=>(
@@ -35,8 +35,8 @@ const Author = () => {
                     </div>
                       
                       <h3 className='font-sen font-bold text-xl md:text-2xl'>{item.author}</h3>
-                      <p className='font-inter text-[#6D6E76] text-sm font-base'>{item.title}</p>
-                      <div className='flex gap-4'>
+                      <p className='font-inter text-[#6D6E76] text-sm font-base '>{item.title}</p>
+                      <div className='pt-5 flex gap-4'>
                          <BsFacebook className='fill-[#232536] ' />
                         <AiOutlineTwitter className='fill-[#232536]' />
                         <BiLogoInstagram />

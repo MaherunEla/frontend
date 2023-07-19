@@ -17,7 +17,7 @@ const Category = () => {
                             </div>
                         </div>
                         <h3 className="font-sen text-xl md:text-2xl font-bold">{item.title}</h3>
-                        <p className="font-inter font-normal text-sm md:text-base">{item.subtitle}</p>
+                        <p className="font-inter font-normal text-[#6D6E76] text-sm md:text-base">{item.subtitle}</p>
                     </div>
                 </Link>
              ))}
