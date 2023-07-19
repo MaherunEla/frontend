@@ -13,7 +13,7 @@ const Header = () => {
     };
   return (
     <div className='w-full bg-[#232536] '>
-        <nav className='w-full container   md:px-20 py-3'>
+        <nav className='container py-3'>
             <div className='flex  items-center justify-between'>
                 {/* logo */}
 

@@ -5,7 +5,7 @@ import {IoIosArrowForward} from 'react-icons/io'
 
 const HeroHome = () => {
   return (
-    <section >
+    
       <div className="relative bg-[url('/assets/images/Home/homebg.png')] bg-cover bg-center bg-no-repeat h-auto w-auto md:w-full  md:h-screen"> 
         <div className='absolute bg-black/50 h-full inset-0'></div>
         
@@ -32,7 +32,7 @@ const HeroHome = () => {
         </div>
        
         
-    </section>
+    
   )
 }
 

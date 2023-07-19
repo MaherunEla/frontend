@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <section>
       <div className='bg-[#232536] '>
-        <div className='p-5 md:p-10 container'>
+        <div className='container'>
           {/* footer nav */}
-        <div>
-          <div className='relative bg-[#232536] px-0 md:px-20 py-5 md:py-3'>
+        
+          <div className=''>
             <div className='flex flex-col space-y-2 md:flex-row items-center justify-between'>
                 {/* logo */}
 
@@ -79,7 +79,7 @@ const Footer = () => {
         
         </div>
 
-      </div>
+      
         
     </section>
   )
