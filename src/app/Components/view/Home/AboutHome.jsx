@@ -36,7 +36,7 @@ const AboutHome = () => {
                 {/* right side */}
                 <div className='w-full md:w-[517px]'>
                 <div className='flex flex-col '>
-                  <div className='flex flex-row items-center  space-x-20 justify-between '>
+                  <div className='flex flex-row items-center  space-x-20 justify-between mb-[32px] '>
                         <h1 className='font-sen ml-5 text-[#232536] font-bold  text-xl md:text-4xl'>All Posts</h1>
                         
                         <button className='font-inter text-[#592EA9] '>View All</button>

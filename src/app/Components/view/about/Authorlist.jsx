@@ -8,8 +8,8 @@ import {BiLogoInstagram} from 'react-icons/bi'
 
 const Authorlist = () => {
   return (
-    <div className='m-10'>
-        <h1 className='p-20 font-sen text-center text-2xl md:text-4xl font-bold'>List of Authors</h1>
+    <div className='container pt-12 xl:pt-32'>
+        <h1 className='mb-12 font-sen text-center text-2xl md:text-4xl font-bold'>List of Authors</h1>
         <div className='grid grid-cols-1 gap:4 md:grid-cols-4 lg-grid-cols-8'>
             {
                 authordata.map((item,index)=>(

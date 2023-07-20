@@ -2,8 +2,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { BlogPostData } from '../BlogPostData'
 import { useParams } from 'next/navigation'
 import { BlogData } from '@/app/Components/view/blog/Blogdata'
+import Jointeam from '@/app/Components/view/Home/Jointeam'
 
 const page = () => {
     const param = useParams()
@@ -13,16 +15,21 @@ const page = () => {
     console.log({param,blog});
   return (
     <section>
-        <div className='container px-20'>
-            <div className='m-20 flex flex-col items-center space-y-5'>
+        <div className='container py-12 lg:py-32'>
+            <div className='flex flex-col justify-center space-y-5'>
+                
                 <div className='flex flex-col md:flex-row space-x-5'>
+                    <div className='w-[48px] h-[48px] relative'>
                     <Image
-                    className="w-[100px] h-[100px] md:w-[48px] md:h-[48px]"
+                    
                     alt='author'
                     src="/assets/images/Home/Profile.png"
-                    width={48}
-                    height={48}
+                    fill
+
                     />
+
+                    </div>
+                    
                     <div>
                     <h2 className='text-2xl font-sen font-bold text-[#592EA9]'>Andrew Jonson</h2>
                     <h4 className='text-base font-inter text-[#6D6E76] font-normal '>Posted on 27th January 2022</h4>
@@ -44,17 +51,20 @@ const page = () => {
                     <h4 className='text-2xl font-san font-bold'>Startup</h4>
                 </div>
 
+                </div>
+                
 
-            </div>
+
+    
 
             {/* blog post image */}
-            <Image 
-            className='w-[200px] h-[200px] md:w-[1280px] md:h-[582px]'
+           <div   className='w-full h-[300px] lg:h-[582px] relative'>
+           <Image
             src="/assets/images/Blog/blogpost.png"
-            width={1280}
-            height={582}
+            fill
             alt="post"
             />
+           </div>
 
             <div className='max-w-3xl md:mx-[220px] my-20'>
             <div className=' flex flex-col space-y-10'>
@@ -120,75 +130,54 @@ const page = () => {
 
             </div>
 
-            <div className='my-10'>
+            <div className=''>
                 <h1 className='py-10 text-4xl font-bold'>
                 What to read next
                 </h1>
                
 
 
-                <div className='flex flex-col space-y-5 md:flex-row space-x-5'>
-                    <div className='max-w-sm flex flex-col space-y-4'>
-                        <Image
-                        src="/assets/images/Blog/post1.png"
-                        width={405}
-                        height={318}
-                        alt="post1"
-                        />
-                        
-                        <h4 className='text-base font-medium '>By <span className='text-[#592EA9]'>John Doe</span>   l   Aug 23, 2021 </h4>
-                        <h1 className='text-2xl font-bold'>A UX Case Study Creating a Studious Environment for Students: </h1>
-                        <p className='text-base font-normal text-[#232536]'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                        
+                <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8'>
+                    {
+                        BlogPostData.map((item,index)=>(
+                            <div className='flex flex-col gap-8' key={index}>
+                            <div className='w-full h-[318px] relative inline-block'>
+                            <Image
+                            src={item.image}
+                            fill
+                            objectFit='cover'
+                            alt="post1"
+                            />
+    
+                            </div>
+                            
+                            
+                            <h4 className='text-base font-medium '>By <span className='text-[#592EA9]'>{item.author}</span> {item.date} </h4>
+                            <h1 className='text-2xl font-bold'>{item.title}</h1>
+                            <p className='text-base font-normal text-[#232536]'>{item.subtitle}</p>
+                            
+                            
+    
+                        </div>
+
+                        ))
                         
 
-                    </div>
+                    }
+                   
 
-                    <div className='max-w-sm flex flex-col space-y-4'>
-                        <Image
-                        src="/assets/images/Blog/post2.png"
-                        width={405}
-                        height={318}
-                        alt="post2"
-                        />
-                        
-                        <h4 className='text-base font-medium '>By <span className='text-[#592EA9]'>John Doe</span>   l   Aug 23, 2021 </h4>
-                        <h1 className='text-2xl font-bold'>A UX Case Study Creating a Studious Environment for Students: </h1>
-                        <p className='text-base font-normal text-[#232536]'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                        
-                        
+                   
 
-                    </div>
-
-                    <div className='max-w-sm flex flex-col space-y-4'>
-                        <Image
-                        src="/assets/images/Blog/post3.png"
-                        width={405}
-                        height={318}
-                        alt="post3"
-                        />
-                        
-                        <h4 className='text-base font-medium '>By <span className='text-[#592EA9]'>John Doe</span>   l   Aug 23, 2021 </h4>
-                        <h1 className='text-2xl font-bold'>A UX Case Study Creating a Studious Environment for Students: </h1>
-                        <p className='text-base font-normal text-[#232536]'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                        
-                        
-
-                    </div>
+                   
 
                 </div>
 
 
                 
             </div>
+            <Jointeam/>
 
-             {/* join our team */}
-
-             <div className='m-10 md:m-20 flex flex-col items-center space-y-5'>
-                  <h1 className='font-sen w-[200px] md:max-w-sm text-xl md:text-4xl font-bold text-center'>Join our team to be a part of our story</h1>
-                  <p className='font-inter w-[150px] md:w-[404px] text-center text-sm md:text-base font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                  <Link href="/" className='px-10 py-3 text-sm md:text-lg font-bold border-2 border-[#FFD050] bg-[#FFD050] font-sen'>Join Now</Link>
-                  </div>
+             
 
             
 

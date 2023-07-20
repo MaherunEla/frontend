@@ -23,7 +23,7 @@ const PageHome = () => {
       {/* <CategoryHome />   */}
       <Author/>  
       <FeatureIcon />
-      {/* <Testimonial/> */}
+      <Testimonial/> 
      <Jointeam />
     
      
