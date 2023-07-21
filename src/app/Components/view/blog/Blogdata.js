@@ -44,5 +44,23 @@ export const BlogData =[
 
 ]
 
+export const blogs=[
+    {
+        id:1,
+        title:"Business",
+        image:'/assets/images/Home/office.png',
+        subTitle:"Font sizes in UI design: The complete guide to follow",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+        id:2,
+        title:"ECONOMY",
+        image:'/assets/images/Home/employe.png',
+        subTitle:"How to build rapport with your web design clients",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    }
+
+]
+
 
 

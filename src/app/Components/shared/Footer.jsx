@@ -29,13 +29,15 @@ const Footer = () => {
 
             </div>
             {/* menu items*/}
-            <div className='flex flex-col  md:flex-row font-inter items-start space-x-2 md:space-x-4 text-[#FFFFFF] text-base font-normal'>
-                <Link href="/" className='mx-2'>Home</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/">About Us</Link>
-                <Link href="/">Contact Us</Link>
-                <Link href="/privacy">Privacy policy</Link>
+            <div className='gap-8'>
+              <div className='flex flex-col md:flex-row justify-between items-center gap-6'>
+              <Link href="/" className='text-white text-base font-normal leading-6 font-inter'>Home</Link>
+                <Link href="/blog" className='text-white text-base font-normal leading-6 font-inter'>Blog</Link>
+                <Link href="/aboutus" className='text-white text-base font-normal leading-6 font-inter'>About Us</Link>
+                <Link href="/contactus" className='text-white text-base font-normal leading-6 font-inter'>Contact Us</Link>
+                <Link href="/privacy" className='text-white text-base font-normal leading-6 font-inter'>Privacy policy</Link>
 
+              </div>
             </div>
             </div>
             

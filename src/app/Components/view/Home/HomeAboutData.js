@@ -28,3 +28,30 @@ export const FeatureIconData =[
         image:"/assets/images/Home/Logo 5.svg"
     }
 ]
+
+export const HomeTestimonialData = [
+    {
+        image: '/assets/images/Home/author4.png',
+        caption: "Jonathan",
+        name: "Jonathan Vallem",
+        address: "New york, USA"
+    },
+    {
+        image: '/assets/images/Home/author1.png',
+        caption: "Floyd",
+        name: "Floyd Miles",
+        address: "Toronto, Canada"
+    },
+    {
+        image: '/assets/images/Home/author2.png',
+        caption: "Dianna",
+        name: "Dianne Russell",
+        address: "New york, USA"
+    },
+    {
+        image: '/assets/images/Home/author3.png',
+        caption: "Jenny",
+        name: "Jenney Wilson",
+        address: "New york, USA"
+    },
+]

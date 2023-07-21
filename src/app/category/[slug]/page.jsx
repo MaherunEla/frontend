@@ -120,7 +120,7 @@ const page = () => {
               
               {
                CategoryData.map((item,index)=>(
-                <Link href={`/category/${item.slug}`}>
+                <Link href={`/category/${item.slug}`} key={index}>
 
                
                 

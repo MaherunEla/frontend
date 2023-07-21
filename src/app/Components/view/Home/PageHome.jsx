@@ -14,7 +14,7 @@ import Passion from './Passion'
 const PageHome = () => {
   return (
     <>
-     {/* <HeroHome />  */}
+     <HeroHome />  
      {/* <About/> */}
      <AboutHome /> 
      <Category />

@@ -102,8 +102,8 @@ const AboutHome = () => {
 
                 <div className='grid grid-cols-1 xl:grid-cols-2 gap-[61px] bg-[#F4F0F8] px-8 py-12 lg:py-24 lg:px-20 '>
                     {
-                        HomeAboutData.map((item)=>(
-                            <div className='xl:w-[515px] '>
+                        HomeAboutData.map((item,index)=>(
+                            <div className='xl:w-[515px] ' key={index}>
                                 <span className='tracking-[3px] font-inter text-sm md:text-base font-semibold inline-block mb-12 uppercase'>{item.title}</span>
                                 <h3 className='mb-4 font-sen text-xl md:text-4xl font-bold'>{item.subTitle}</h3>
                                 <p className='font-inter text-sm md:text-base font-normal'>{item.description}</p>

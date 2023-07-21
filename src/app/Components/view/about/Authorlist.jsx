@@ -8,39 +8,51 @@ import {BiLogoInstagram} from 'react-icons/bi'
 
 const Authorlist = () => {
   return (
-    <div className='container pt-12 xl:pt-32'>
-        <h1 className='mb-12 font-sen text-center text-2xl md:text-4xl font-bold'>List of Authors</h1>
-        <div className='grid grid-cols-1 gap:4 md:grid-cols-4 lg-grid-cols-8'>
-            {
-                authordata.map((item,index)=>(
-                  <Link href={`/author/${item.slug}`} key={index}>
-                    <div className='mb-10 flex flex-col w-[296px] h-[324px] border-2 border-[#F4F4F4] bg-[#F4F4F4] hover:bg-[#FBF6EA] items-center space-y-5'>
-                  <Image
-                  className='mt-5 w-[70px] h-[70px] md:w-[128px] md:h-[128px]'
-                  src={item.image}
-                  width={128}
-                  height={128}
-                  alt="author pic"
-                  />
-                  <h1 className='font-bold text-xl md:text-2xl'>{item.author}</h1>
-                  <p className='text-[#6D6E76] text-sm font-base'>{item.title}</p>
-                  <div className='flex flex-row items-center space-x-3 '>
-                     <BsFacebook className='fill-[#232536] ' />
-                    <AiOutlineTwitter className='fill-[#232536]' />
-                    <BiLogoInstagram />
-                    <AiFillLinkedin className='fill-[#232536]' />
-                  </div>
+    <div className='container pt-12 lg:pt-32'>
+      <div>
+          <h1 className='font-sen text-xl md:text-4xl font-bold text-center'>
+                  List of Authors
+                  </h1>
 
-                </div>
+                  {/* author list */}
+                  <div className='pt-14  grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+                    {/* author box 1 */}
+                    {
+                      authordata.map((item,index)=>(
+                        
 
-                  </Link>
+                    <Link href={`/author/${item.slug}`} key={index} className={`py-20 flex flex-col items-center bg-[#F4F4F4] hover:bg-[#FBF6EA]`}>
                   
-                ))
+                    <div className='w-[128px] h-[128px] relative inline-block pb-5'>
+                      <Image
+                      
+                      src={item.image}
+                      fill
+                      objectFit='cover'
+                      alt="author pic"
+                      />
 
-            }
-            
-    </div>
-    </div>
+                    </div>
+                      
+                      <h3 className='font-sen font-bold text-xl md:text-2xl'>{item.author}</h3>
+                      <p className='font-inter text-[#6D6E76] text-sm font-base '>{item.title}</p>
+                      <div className='pt-5 flex gap-4'>
+                         <BsFacebook className='fill-[#232536] ' />
+                        <AiOutlineTwitter className='fill-[#232536]' />
+                        <BiLogoInstagram />
+                        <AiFillLinkedin className='fill-[#232536]' />
+                      </div>
+
+                    
+
+
+                    </Link>
+                     ))
+                    }
+                    </div>
+            </div>
+      </div>
+    
   )
 }
 

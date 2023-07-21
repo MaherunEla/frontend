@@ -16,7 +16,9 @@
  .sb{
   @apply border border-red-600;
  }
-
+ select::after{
+  @apply left-[20px];
+ }
   /* .text-before::before {
     content: 'online';
     width: 100%;

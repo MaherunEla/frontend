@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Authorlist from '../Components/view/about/Authorlist'
-import Jointeam from '../Components/view/Home/Jointeam'
+import Authorlist from './Authorlist'
+import Jointeam from '../Home/Jointeam'
 
 const page = () => {
   return (
