@@ -48,7 +48,7 @@ const HeroHome = () => {
                     <p className='mb-6 text-sm font-normal leading-7 md:text-base'>By <span className='text-secondary'>James West</span>  |  May 23, 2022 </p>
                     <p className='mb-12 text-sm font-normal leading-7 md:text-base'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                     <div className='flex flex-row items-center border-2 w-[204px] h-[56px] border-[#FFD050] bg-[#FFD050]'>
-                        <Link href="/" className='max-w-[204px] pl-[45px] text-sm md:text-lg font-bold text-[#232536]'>Read More </Link>
+                        <Link href="/blog/Readmore" className='max-w-[204px] pl-[45px] text-sm md:text-lg font-bold text-[#232536]'>Read More </Link>
                         <IoIosArrowForward className="mt-2px fill-[#232536]"/>
                        
 

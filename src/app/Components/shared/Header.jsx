@@ -32,7 +32,7 @@ const Header = () => {
             {/* menu items*/}
             <div className='hidden md:flex items-center space-x-4 text-[#FFFFFF] text-base font-normal'>
                 <Link href="/" className='font-inter '>Home</Link>
-                <Link href="/blog" className='font-inter '>Blog</Link>
+                <Link href="/blog?page=1" className='font-inter '>Blog</Link>
                 <Link href="/aboutus" className='font-inter '>About Us</Link>
                 <Link href="/contactus" className='font-inter '>Contact Us</Link>
                 <Link href="/" className='font-sen border-2 px-10 py-2 border-[#232536] bg-[#FFFFFF] text-[#232536] hover:bg-[#FFD050]' >Subscribes</Link>

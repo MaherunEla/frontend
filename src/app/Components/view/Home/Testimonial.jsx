@@ -26,6 +26,10 @@ const Testimonial = () => {
         onSwiper={(swiper)=>{}}
         className='mt-8 lg:mt-0 w-full relative'
         >
+          <div className='flex absolute bottom-0 right-0 z-10 gap-6'>
+                  <SwiperPreviousButton />
+                  <SwiperNextButton />
+                </div>
           {
             HomeTestimonialData.map((item,index)=>(
               <SwiperSlide key={index}>
@@ -42,10 +46,7 @@ const Testimonial = () => {
                     <p className='text-sm font-normal leading-7 md:text-base font-inter'>{item.address}</p>
                   </div>
                  </div>
-                 <div className='flex gap-6'>
-                  <SwiperPreviousButton />
-                  <SwiperNextButton />
-                </div>
+                 
 
                   </div>
                 </div>

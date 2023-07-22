@@ -1,5 +1,5 @@
 import React from 'react'
-import { blogs } from '../blog/Blogdata'
+
 import Link from 'next/link'
 import Image from 'next/image'
 

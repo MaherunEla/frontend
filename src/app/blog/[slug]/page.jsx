@@ -4,63 +4,63 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { BlogPostData } from '../BlogPostData'
 import { useParams } from 'next/navigation'
-import { BlogData } from '@/app/Components/view/blog/Blogdata'
+
 import Jointeam from '@/app/Components/view/Home/Jointeam'
+import { AllBlogdata } from '@/app/Components/view/blog/AllBlogdata'
 
 const page = () => {
     const param = useParams()
     
-    const blog = BlogData.find(e=>e.slug = param?.slug)
+    const blog = AllBlogdata.find(e=>e.slug = param?.slug)
     
     console.log({param,blog});
   return (
     <section>
         <div className='container py-12 lg:py-32'>
-            <div className='flex flex-col justify-center space-y-5'>
+            <div className='flex justify-center my-16'>
+                <div className='w-[768px]'>
+                    <div className='flex gap-4 flex-col sm:flex-row mb-6'>
+                        <div className='w-[48px] h-[48px] relative'>
+                            <Image src={blog.authors.image} fill alt="author" />
+                        </div>
+                        <div>
+                            <h4 className='text-xl  font-semibold leading-[130%] font-sens lg:text-2xl text-[#592EA9]'>{blog.authors.title}</h4>
+                            <p className='font-inter text-sm font-normal leading-7 md:text-base text-[#6D6E76]'>Posted on 27th January 2022</p>
+                        </div>
+
+
+                    </div>
+                    <h1 className='mb-8 text-3xl font-bold sm:text-4xl md:text-[40px] xl:text-5xl xl:leading-[64px]  font-sen'>{blog.title}</h1>
+                    <div className='flex gap-2 items-center  '>
+                        <div className='w-[24px] h-[24px] relative'>
+                            <Image src={blog.icon}  fill alt="logo"/>
+                        </div>
+                        <h4 className='text-xl text-[#232536] font-semibold leading-8 font-sens lg:text-2xl'>{blog.category.name}</h4>
+
+
+                    </div>
+
+                </div>
+
                 
-                <div className='flex flex-col md:flex-row space-x-5'>
-                    <div className='w-[48px] h-[48px] relative'>
-                    <Image
-                    
-                    alt='author'
-                    src="/assets/images/Home/Profile.png"
-                    fill
-
-                    />
-
-                    </div>
-                    
-                    <div>
-                    <h2 className='text-2xl font-sen font-bold text-[#592EA9]'>Andrew Jonson</h2>
-                    <h4 className='text-base font-inter text-[#6D6E76] font-normal '>Posted on 27th January 2022</h4>
-
-                    </div>
+                
 
                     
                     
 
-                </div>
-                <h1 className='md:max-w-3xl text-2xl md:text-4xl md:pl-[245px] font-bold font-sen '>Step-by-step guide to choosing great font pairs</h1>
-                <div className='ml-20 md:ml-0 flex flex-row pr-[165px] space-x-2'>
-                    <Image
-                    alt='logo'
-                    src="/assets/images/Home/shuttle.svg"
-                    width={24}
-                    height={24}
-                    />
-                    <h4 className='text-2xl font-san font-bold'>Startup</h4>
-                </div>
-
-                </div>
+               
+               
+               
+                
                 
 
 
     
-
+            </div>
             {/* blog post image */}
            <div   className='w-full h-[300px] lg:h-[582px] relative'>
            <Image
-            src="/assets/images/Blog/blogpost.png"
+            src={blog.image}
             fill
             alt="post"
             />

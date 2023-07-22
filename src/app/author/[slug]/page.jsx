@@ -2,16 +2,16 @@
 import AuthorHero from '@/app/Components/view/author/AuthorHero'
 import React from 'react'
 import { useParams } from 'next/navigation'
-import { author } from '@/app/Components/view/Home/authordata';
-import Authorpost from '@/app/Components/view/author/Authorpost';
+import { AllBlogdata } from '@/app/Components/view/blog/AllBlogdata';
+
 const page = () => {
     const param = useParams()
-    const authorname = author.find(e=>e.slug == param.author)
-    console.log({authorname});
+    const author = AllBlogdata.find(e=>e.authors.slug == param?.slug)
+    console.log({author});
   return (
     <>
-    <AuthorHero />
-    <Authorpost/>
+    <AuthorHero author={author}/>
+    {/* <Authorpost /> */}
 
 
     </>

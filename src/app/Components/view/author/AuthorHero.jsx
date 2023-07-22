@@ -3,14 +3,15 @@ import Image from "next/image";
 import {BsFacebook} from 'react-icons/bs'
 import {AiOutlineTwitter, AiFillLinkedin} from 'react-icons/ai'
 import {BiLogoInstagram} from 'react-icons/bi'
-const AuthorHero = () => {
+const AuthorHero = ({author}) => {
+  console.log({author});
   return (
     <div className="bg-[#F4F0F8]">
       <div className="container py-[64px]">
         <div className="flex flex-col lg:flex-row gap-8 ">
           <div className="w-[251px] h-[294px] relative">
             <Image
-              src="/assets/images/Blog/author.png"
+              src={author.authors.image}
               fill
               objectFit="cover"
               alt="author"
@@ -18,7 +19,7 @@ const AuthorHero = () => {
           </div>
           <div className="lg:w-[624px] w-full">
             <h1 className="mb-6 text-3xl sm:text-4xl md:text-[40px] xl:text-5xl xl:leading-[64px] font-bold font-sen">
-              Hey there, I’m  and welcome to my Blog
+              Hey there, I’m {author.authors.title} and welcome to my Blog
             </h1>
             <p className="leading-[64px] text-sm  md:text-base font-normal">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
