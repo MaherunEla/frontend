@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { BlogPostData } from '../BlogPostData'
+
 import { useParams } from 'next/navigation'
 
 import Jointeam from '@/app/Components/view/Home/Jointeam'
@@ -11,9 +11,11 @@ import { AllBlogdata } from '@/app/Components/view/blog/AllBlogdata'
 const page = () => {
     const param = useParams()
     
-    const blog = AllBlogdata.find(e=>e.slug = param?.slug)
+    const blog = AllBlogdata.find(e=>e.slug == param?.slug)
     
     console.log({param,blog});
+    const post = AllBlogdata.filter(item=>item.slug == param?.slug && (blog.id!= item.id))
+   console.log({post});
   return (
     <section>
         <div className='container py-12 lg:py-32'>
@@ -139,7 +141,7 @@ const page = () => {
 
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8'>
                     {
-                        BlogPostData.map((item,index)=>(
+                        post.map((item,index)=>(
                             <div className='flex flex-col gap-8' key={index}>
                             <div className='w-full h-[318px] relative inline-block'>
                             <Image
@@ -154,7 +156,7 @@ const page = () => {
                             
                             <h4 className='text-base font-medium '>By <span className='text-[#592EA9]'>{item.author}</span> {item.date} </h4>
                             <h1 className='text-2xl font-bold'>{item.title}</h1>
-                            <p className='text-base font-normal text-[#232536]'>{item.subtitle}</p>
+                            <p className='text-base font-normal text-[#232536]'>{item.subTitle}</p>
                             
                             
     

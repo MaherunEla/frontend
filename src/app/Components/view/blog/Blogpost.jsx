@@ -64,7 +64,7 @@ const NexthandleClick=()=>{
                                 
                                 <h4 className='text-base font-inter font-medium text-[#592EA9] tracking-[3px] uppercase'>{item.category.name}</h4>
                                 <h1 className='font-sen text-2xl lg:text-3xl leading-[48px] xl:text-4xl  -tracking-[2px] font-bold'>{item.title}</h1>
-                                <p className=' font-inter text-[#6D6E76] text-base font-normal'>{item.description}</p>
+                                <p className=' font-inter text-[#6D6E76] text-base font-normal'>{item.subTitle}</p>
 
                             </div>
 

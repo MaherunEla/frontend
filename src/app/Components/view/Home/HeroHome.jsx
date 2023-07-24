@@ -39,10 +39,10 @@ const HeroHome = () => {
     //   </div>
     // </div>
 
-    <div className={`bg-[url('/assets/images/Home/homebg.png')] bg-cover bg-center bg-no-repeat w-screen h-[calc(100vh-80px)]`}>
+    <div className={`bg-[url('/assets/images/Home/homebg.png')] bg-cover bg-center bg-no-repeat w-screen h-full lg:h-[calc(100vh-80px)]`}>
       <div className="w-full h-full" style={{background: "radial-gradient(80.99% 71.93% at 74.58% 0.00%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%)"}}>
         <div className="container text-white flex items-center w-full h-full">
-          <div>
+          <div className="py-12 sm:py-0">
             <p className="tracking-[3px] font-medium mb-6 font-sens">Posted on startup</p>
             <span className='text-3xl font-bold  sm:text-4xl md:text-5xl xl:text-[56px] xl:leading-[64px] font-sen mb-6 block'>Step-by-step guide to choosing <br />great font pairs</span>
                     <p className='mb-6 text-sm font-normal leading-7 md:text-base'>By <span className='text-secondary'>James West</span>  |  May 23, 2022 </p>

@@ -32,7 +32,7 @@ const Footer = () => {
             <div className='gap-8'>
               <div className='flex flex-col md:flex-row justify-between items-center gap-6'>
               <Link href="/" className='text-white text-base font-normal leading-6 font-inter'>Home</Link>
-                <Link href="/blog" className='text-white text-base font-normal leading-6 font-inter'>Blog</Link>
+                <Link href="/blog?page=1" className='text-white text-base font-normal leading-6 font-inter'>Blog</Link>
                 <Link href="/aboutus" className='text-white text-base font-normal leading-6 font-inter'>About Us</Link>
                 <Link href="/contactus" className='text-white text-base font-normal leading-6 font-inter'>Contact Us</Link>
                 <Link href="/privacy" className='text-white text-base font-normal leading-6 font-inter'>Privacy policy</Link>
